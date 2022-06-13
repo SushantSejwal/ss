@@ -1,0 +1,28 @@
+:root {
+    --nav-font-color: #f5f5f5;
+    --nav-font-color-little-light: #6e6e73;
+    --link-color: #0066cc;
+    --page-nav-filter: saturate(180%) blur(20px);
+    --page-nav-dark-color: rgba(29,29,31,0.72);
+    --page-nav-light-color: rgba(255,255,255,0.72);
+    
+    /* global_nav */
+    --global-nav-background: hsla(0, 0%, 16%, 1);
+    --global-nav-linear: linear-gradient(180deg, hsla(0, 0%, 16%, 1) 0%, hsla(0, 0%, 20%, 1) 25%, hsla(0, 0%, 20%, 1) 50%, hsla(0, 0%, 20%, 1) 75%, hsla(0, 0%, 16%, 1) 100%);
+    --global-nav-moz-linear: -moz-linear-gradient(180deg, hsla(0, 0%, 16%, 1) 0%, hsla(0, 0%, 20%, 1) 25%, hsla(0, 0%, 20%, 1) 50%, hsla(0, 0%, 20%, 1) 75%, hsla(0, 0%, 16%, 1) 100%);
+    --global-nav-webkit-linear: -webkit-linear-gradient(180deg, hsla(0, 0%, 16%, 1) 0%, hsla(0, 0%, 20%, 1) 25%, hsla(0, 0%, 20%, 1) 50%, hsla(0, 0%, 20%, 1) 75%, hsla(0, 0%, 16%, 1) 100%);
+    --global-nav-logo-shadow: 0px 1px 5px rgb(49, 49, 49);
+    --global-nav-list-border: 1px solid rgb(100, 100, 100);
+    --global-nav-list-border-ham-active: 1px solid rgb(143, 143, 143);
+    --global-nav-list-border-item: 1px solid rgb(50, 50, 50);
+    --global-nav-list-border-item-ham-active: 1px solid rgb(97, 97, 97);
+    --global-nav-link-color: #dadada;
+    --global-nav-link-font-weight: 300;
+
+    /* hamburger */
+    --ham-back-color: #f5f5f5;
+}
+
+.home-logo-svg path {
+    fill: #f5f5f5;
+}

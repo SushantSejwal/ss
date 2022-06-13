@@ -1,0 +1,52 @@
+@import url('../../fonts/sans-serif/all/all.css');
+@import url('../../fonts/sans-serif/manrope/stylesheet.css');
+
+
+:root{
+    --white: #ffffff;
+    --white-08: #fbfbfd;
+    --white-06: #f5f5f7;
+    --black: #000000;
+    --black-08: #151516;
+    --black-06: #1d1d1f;
+    --ro-red: #f63e54;
+    --blue: #027fff;
+    --dark-teal: #049cb7;
+    --purple-like-light-blue: #8876fe;
+    --orange: #e66702;
+    --purple: #6529f8;
+    --indigo: #3d44c3;
+    --turquoise: #2294b1;
+    --dark-green: #0c9d46;
+    --purple-like-pink: #d71bce;
+    --font-color: #1d1d1f;
+    --pink: #ed186a;
+    --link-color: #0066cc;
+
+    --rose-to-purple-gradient: linear-gradient(110deg,#ff6673,#ff6673,#cc25e4,#7c00ff);
+    --blue-to-rose-gradient: linear-gradient(90deg,#702BFC,#F23BFF,#FF7076);
+    --pink-to-yellow-gradient: linear-gradient(90deg, rgb(237, 24, 106) 0%, rgb(255, 103, 0) 100%, rgb(255, 203, 57) 200%);
+    --dark-green-to-blue-gradient: linear-gradient(90deg, rgb(0, 158, 119) 0%, rgb(0, 153, 192) 100%, rgb(2, 127, 255) 200%, rgb(88, 86, 214) 300%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    -webkit-tap-highlight-color: transparent;
+    margin: auto;
+    overflow-y: scroll;
+    overflow-X: auto;
+    font-size: 18px;
+    /* background-color: #fff; */
+    /* min-height: 200vh; */
+    color: var(--font-color);
+    font-smooth: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: auto;
+}

@@ -1,0 +1,185 @@
+/* color Variables */
+:root{
+    --var-clr: #b0b7c3;
+    --bg-clr: #282c34;
+    --math-opr: #56b7c3;
+    --loop: #cf68e1;
+    --conditional: #cf68e1;
+    --membership-opr: #cf68e1;
+    --relational-opr: #cf68e1;
+    --logical-opr: #cf68e1;
+    --boolean: #cf68e1;
+    --pass: #cf68e1;
+    --continue: #cf68e1;
+    --break: #cf68e1;
+    --comment: #676e95;
+    --def-func: #a78cfa;
+    --func-name: #6494ee;
+    --calling-func: #6494ee;
+    --func-arg-taking: #e4bf7f;
+    --args: #56b7c3;
+    --kwargs: #56b7c3;
+    --method-name: #6494ee;
+    --calling-method: #6494ee;
+    --str: #98c379;
+    --f-str: #ff6ab3;
+    --period: #838fa7;
+    --common: #838fa7;
+    --equal-to: #838fa7;
+    --num: #ff9007;
+    --brac-frst: #ffd700;
+    --brac-sec: #da70d6;
+    --brac-thrd: #82cbfa;
+    --def-class: #a78cfa;
+    --class-name: #56b7c3;
+    --type-cast: #56b7c3;
+    --class-ins: #f02b77;
+    --class-ins-self: #f02b77;
+    --editor-line-no: #525773;
+}
+/* important */
+/* cd short for code */
+
+.cd-var{
+    color: var(--var-clr);
+}
+
+.cd-math-op{
+    color: var(--math-opr);
+}
+
+.cd-loop{
+    color: var(--loop);
+}
+
+.cd-conditional{
+    color: var(--conditional);
+}
+
+.cd-logical{
+    color: var(--conditional);
+}
+
+.cd-comment{
+    color: var(--comment);
+    font-style: italic;
+}
+
+.cd-membership{
+    color: var(--membership-opr);
+}
+
+.cd-relational{
+    color: var(--relational-opr);
+}
+
+.cd-bool{
+    color: var(--boolean);
+}
+
+.cd-def-kwd{
+    color: var(--def-func);
+}
+
+.cd-func{
+    color: var(--func-name);
+}
+
+.cd-func-arg{
+    color: var(--func-arg-taking);
+}
+
+.cd-args{
+    color: var(--args);
+}
+
+.cd-kwargs{
+    color: var(--kwargs);
+}
+
+.cd-method{
+    color: var(--method-name);
+}
+
+.cd-str{
+    color: var(--str);
+    font-style: italic;
+}
+
+.cd-f-str{
+    color: var(--f-str);
+}
+
+.cd-period{
+    color: var(--period);
+}
+
+.cd-common{
+    color: var(--common);
+}
+
+.cd-equal-to{
+    color: var(--equal-to);
+}
+
+.cd-period{
+    color: var(--period);
+}
+
+.cd-num{
+    color: var(--num);
+}
+
+.cd-brac-f{
+    color: var(--brac-frst);
+}
+
+.cd-brac-s{
+    color: var(--brac-sec);
+}
+
+.cd-brac-t{
+    color: var(--brac-thrd);
+}
+
+.cd-class-kwd{
+    color: var(--def-class);
+}
+
+.cd-class-name{
+    color: var(--class-name);
+}
+
+.cd-self-kwd{
+    color: var(--class-ins);
+}
+
+.cd-type-cast{
+    color: var(--type-cast);
+}
+
+.code-line-no{
+    color: var(--editor-line-no);
+}
+
+.cd-pass{
+    color: var(--pass);
+}
+
+.cd-continue{
+    color: var(--continue);
+}
+
+.cd-break{
+    color: var(--break);
+}
+
+
+.code-wrapper-line-text ::selection {
+    background: rgba(231, 234, 240, 0.137);
+}
+
+.code-wrapper-line-text::-webkit-scrollbar { width: 10px; height: 10px;}
+.code-wrapper-line-text::-webkit-scrollbar-track { background-color: rgb(64, 76, 83); border-radius: 5px 5px 4px 4px; color: rgb(98, 99, 116); margin-right: 20px; margin-left: 20px;}
+.code-wrapper-line-text::-webkit-scrollbar-thumb {background: rgb(181, 173, 197);border-radius: 5px 5px 4px 4px;}
+.code-wrapper-line-text::-webkit-scrollbar-thumb:hover {background: rgb(122, 128, 134);}

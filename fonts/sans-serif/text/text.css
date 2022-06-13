@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'SushantText';
+    src: url('text-regular/SushantText-RegularItalic.woff2') format('woff2'),
+        url('text-regular/SushantText-RegularItalic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'SushantText';
+    src: url('text-regular/SushantText-Regular.woff2') format('woff2'),
+        url('text-regular/SushantText-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'SushantText';
+    src: url('text-light/SushantText-Light.woff2') format('woff2'),
+        url('text-light/SushantText-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'SushantText';
+    src: url('text-light/SushantText-LightItalic.woff2') format('woff2'),
+        url('text-light/SushantText-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: block;
+}
+
+
+

@@ -1,0 +1,504 @@
+/* resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-y: scroll;
+    max-width: 1920px;
+    min-width: 350px;
+    margin: auto;
+    background-color: #eff6fc;
+}
+
+/* Nav */
+.py-nav {
+    background-color: rgb(46, 46, 46);
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 511;
+}
+
+.py-nav.ss-mob-nav {
+    position: fixed;
+}
+.py-nav.class-for-global-nav-animation{
+    animation-name: fixed_static_position;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    z-index: 43;
+
+}
+
+@keyframes fixed_static_position {
+    0% {position: fixed;}
+    99% {position: fixed;}
+    100% {position: static;}
+}
+
+.py-nav-ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-anchor-div {
+    display: flex;
+    align-items: center;
+    font-family: 'SushantText', sans-serif;
+    font-weight: 300;
+}
+
+/* Main Anchor */
+.nav-home-anchor {
+    z-index: 1;
+}
+
+.nav-home-anchor li a.nav-anchor {
+    margin: 5px 10px;
+    padding: 5px 10px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.nav-home-anchor li a:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.nav-home-anchor li a svg {
+    height: 18px;
+    width: 30px;
+}
+
+/* Other Anchors */
+.nav-other-anchor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-other-anchor a {
+    margin:5px 10px;
+    padding: 5px;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.nav-other-anchor li a:hover {
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+}
+
+/* toggle btn */
+.toggle-button {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 50px;
+    cursor: pointer;
+    opacity: 0.8;
+    z-index: 13;
+}
+
+.toggle-button:hover {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.btn-bar {
+    width: 17.5px;
+    height: 1px;
+    background-color: #fff;
+    position: relative;
+    display: none;
+    border-radius: 20px;
+}
+
+/* toggle-btn animation */
+.bar-1 {
+    top: -2.7px;
+    transition-property: transform, top;
+    transition-delay: 0ms, 0.1s;
+    transition-duration: 0.2s;
+}
+
+.bar-2 {
+    top: 2.7px;
+    transition-property: transform, top;
+    transition-delay: 0ms, 0.1s;
+    transition-duration: 0.2s;
+}
+
+.bar-1.ss-mob-nav {
+    top: 0.5px;
+    transform: rotate(45deg);
+    transition-property: top, transform;
+    transition-delay: 0ms, 0.15s;
+    transition-duration: 0.3s linear;
+}
+
+.bar-2.ss-mob-nav {
+    top: -0.5px;
+    transform: rotate(-45deg);
+    transition-property: top, transform;
+    transition-delay: 0ms, 0.15s;
+    transition-duration: 0.3s linear;
+}
+
+/* bullet */
+@media only screen and (min-width:769px) {
+    .bullet .bullet-list {
+        margin: 5px 10px;
+        padding: 5px 10px;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.8;
+        z-index: 1;
+        cursor: pointer;
+    }
+}
+
+.bullet .bullet-list svg {
+    height: 18px;
+    width: 30px;
+}
+
+.bullet .bullet-list:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* for mobile screen */
+@media only screen and (max-width:768px) {
+    .py-nav {
+        background-color: rgb(44, 44, 44);
+    }
+
+    .nav-home-anchor li a.home-anchor.nav-anchor {
+        z-index: 1;
+        margin: 5px 10px;
+        padding: 8px 10px;
+    }
+
+    .nav-home-anchor a.home-anchor svg {
+        height: 18px;
+        width: 40px
+    }
+
+    .nav-other-anchor {
+        position: fixed;
+        top: 47px;
+        right: 0px;
+        left: 0;
+        height: 0vh;
+        overflow-y: hidden;
+        flex-direction: column;
+        justify-content: start;
+        background-color: rgb(48, 48, 48);
+        align-items: center;
+        transition: all 0.4s ease-in-out;
+        z-index: 99999999999999999999999943;
+    }
+
+    .nav-other-anchor::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .nav-other-anchor.ss-mob-nav {
+        bottom: 0px;
+        height: 100vh;
+        overflow-y: scroll;
+        transition: all 0.4s ease-in-out;
+        z-index: 999999999999999999999999999943;
+    }
+
+    .nav-other-anchor .nav-other-1-list {
+        margin: 30px 0px 0px 0px;
+    }
+
+    .nav-other-anchor a {
+        font-size: 20px;
+        display: block;
+        opacity: 0.8;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .nav-other-anchor li a:hover {
+        opacity: 1;
+        transition: opacity 0.25s ease-in-out;
+    }
+
+    .nav-other-anchor li {
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    /* toggle btn */
+    .btn-bar {
+        display: block;
+    }
+
+    /* bullet in mobile */
+    .bullet {
+        position: absolute;
+        top: 1px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        width: 50px;
+        z-index: 13;
+    }
+
+    .bullet .bullet-list {
+        right: 0px;
+        color: #fff;
+        opacity: 0.8;
+        z-index: 1;
+        transition: opacity 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .bullet .bullet-list svg {
+        height: 18px;
+        width: 30px;
+    }
+
+    .bullet .bullet-list:hover {
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+}
+
+/* visibilty hidden anchor */
+@media only screen and (min-width:769px) {
+    .visibility-hidden-li {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .visibility-hidden-li {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width:370px) {
+    .bullet {
+        display: none;
+    }
+}
+
+/* footer */
+.footer-text {
+    font-family: "sushant";
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px;
+    color: rgb(247, 247, 247);
+}
+
+footer {
+    background-color: rgb(36, 36, 36);
+}
+
+
+/**//**//**//**//**//**//**//**//**//*                            *//**//**//**//**//**//**//**//**//**/
+/**//**//**//**//**//**//**//**//**//*    Py inside navigation    *//**//**//**//**//**//**//**//**//**/
+/**//**//**//**//**//**//**//**//**//*                            *//**//**//**//**//**//**//**//**//**/
+.py-sticky-nav{
+    position: sticky;
+    top: -0.3px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(180px);
+    border-bottom: 1px #e0e0e0 solid;
+}
+
+.py-sticky-nav.class-for-global-nav-animation{
+    animation-name: sticky_static_position;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
+}
+@keyframes sticky_static_position {
+    0% { margin-top: 42px; z-index: -1;margin-top: 48px;}
+    99% {margin-top: 42px;z-index: -1;margin-top: 48px;}
+    100% {margin-top: 0px;z-index: 1;margin-top: 0px;}
+}
+
+.py-sticky-logo-anchor svg{
+    width: 30px;height: 30px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+.py-sticky-logo-anchor svg:hover{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+.py-sticky-ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+}
+.py-sticky-ul li{margin: 5px 20px;}
+.py-sticky-list{
+    display: flex;
+    align-items: center;
+}
+.py-sticky-ul li a{
+    display: block;
+    font-family: "graphik","sushant",sans-serif;
+    font-family: var(--font);
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--link);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.9;
+}
+.py-sticky-ul li a:hover{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+.py-sticky-ul li .py-learn-anchor{
+    color: white;
+    background-color: var(--link);
+    padding: 5px 12px;
+    border-radius: 30px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.7;
+}
+.learning-list-wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0px 5px;
+}
+.learning-list-ul{list-style-type: none;padding: 0;margin: 0;}
+.learning-link{
+    display: block;
+    font-family: "graphik","sushant",sans-serif;
+    font-family: var(--font);
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    background-color: var(--link);
+    padding: 5px 12px;
+    border-radius: 30px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.7;
+}
+.learning-link:hover{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+/* Toggle btn for inpage */
+.py-toggle-btn{
+    position: absolute;
+    top: 1px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 50px;
+    cursor: pointer;
+    opacity: 0.8;
+    z-index: 13;
+    transition: all 0.4s ease-in-out;
+}
+.py-toggle-btn.ds{
+    transform: translateY(-3px) rotateZ(-180deg);
+    transition: all 0.4s ease-in-out;
+}
+.py-bar-1,.py-bar-2{
+    height: 12px;
+    width: 1px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 20px;
+}
+.py-bar-1{
+    position: relative;
+    right: 4px;
+    transform: rotateZ(-50deg);
+}
+.py-bar-2{
+    position: relative;
+    right: -4px;
+    transform: rotateZ(50deg);
+}
+/* mobile and desktop */
+.mob-hidden{display: flex;}
+.mobile-visible{
+    display: none;
+}
+/* for mobile */
+@media screen and (max-width:768px) {
+    .py-sticky-ul{flex-direction: column;}    
+    .py-sticky-list{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 45px;
+        left: 0px;
+        right: 0px;
+        background-color: rgba(255, 255, 255, 0.966);
+        height: 0vh;
+        overflow-y: hidden;
+        transition: all 0.4s linear;
+    }
+    .py-sticky-list.ds{
+        height: 129px;
+        overflow-y: scroll;
+        transition: all 0.4s linear;
+    }
+    .py-sticky-list::-webkit-scrollbar {width: 0px;}
+    .py-page-list-1{
+        border-bottom: 1px solid rgb(146, 146, 146);
+        display: block;
+        padding: 20px 0px 20px 0px;
+    }
+    .py-page-list-2{
+        display: block;
+        padding: 10px 0px 20px 0px;
+    }
+    /* mobile and desktop */
+    .mob-hidden{display: none;}
+    .mobile-visible{display: flex;}
+}

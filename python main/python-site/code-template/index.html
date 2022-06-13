@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/code.css">
+    <link rel="stylesheet" id="theme-link" href="css/code-dark/code-dark.css">
+</head>
+<body>
+
+    <!-- code template -->
+    <div class="main-code-container">
+        <div class="code-container">
+            <div class="code-top-part">
+                <div class="code-heading">
+                    <h1 class="heading-code">Code</h1>
+                </div>
+                <div class="code-theme">
+                    <div class="code-theme-switcher">
+                        <span class="code-theme-icon-dark"><i class="fa-solid fa-moon"></i></span>
+                        <span class="code-theme-icon-light visible"><i class="fa-solid fa-sun"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- middle part of code container -->
+            <div class="code-middle-part">
+                <div class="code-wrapper">
+
+                    <!-- Code lines -->
+                    <div class="code-wrapper-line-no">
+                        <div class="code-line-no-wrapper"></div>
+                    </div>
+
+                    <!-- code text -->
+                    <div class="code-wrapper-line-text">
+                        <div class="code-text-wrapper">
+                            <div class="code-text"><p class="code-text-para"><span class="cd-loop">while</span> <span class="cd-var">is_jinex_cute:</span> <span class="cd-comment"># if jinex is cute then it will only run</span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-1"></span><span class="cd-var">lst_ele</span> <span class="cd-common">=</span> <span class="cd-func">input</span><span class="cd-brac-f">(</span><span class="cd-str">"Enter  numbers as element for list or type no[N] to leave<span class="cd-common">\n</span> ->  "</span><span class="cd-brac-f">)</span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-1"></span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-1"></span><span class="cd-var">lst_ele</span> <span class="cd-common">=</span> <span class="cd-var">lst_ele</span><span class="cd-common">.</span><span class="cd-func">strip</span><span class="cd-brac-f">()</span><span class="cd-common">.</span><span class="cd-func">lower</span><span class="cd-brac-f">()</span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-1"></span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-1"></span><span class="cd-conditional">if</span> <span class="cd-var">lst_ele</span><span class="cd-common">.</span><span class="cd-func">isalpha</span><span class="cd-brac-f">()</span><span class="cd-common"></span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-1"></span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-2"></span><span class="cd-conditional">if</span> <span class="cd-var">lst_ele</span> <span class="cd-relational">==</span> <span class="cd-str">'no'</span>  <span class="cd-logical">or</span> <span class="cd-var">lst_ele</span> <span class="cd-relational">==</span> <span class="cd-str">'n'</span><span class="cd-common">:</span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-3"></span><span class="cd-break">break</span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-1"></span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-2"></span><span class="cd-conditional">else</span><span class="cd-common">:</span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-3"></span><span class="cd-func">print</span><span class="cd-brac-f">(</span><span class="cd-str">'WHHOOPPSE. <didnspan class="cd-comman">\</didnspan>'t understand that, please type numbers or type no[N] to leave'</span><span class="cd-brac-f">)</span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-3"></span><span class="cd-func">print</span><span class="cd-brac-f">()</span> <span class="cd-comment"># printing empty line for formating</span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-3"></span><span class="cd-var">lst_ele</span> <span class="cd-common">=</span> <span class="cd-func">input</span><span class="cd-brac-f">(</span><span class="cd-str">"Enter  numbers as element for list or type no[N] to leave<span class="cd-common">\n</span> ->  "</span><span class="cd-brac-f">)</span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-1"></span><span class="cd-conditional">elif</span> <span class="cd-var">lst_ele</span><span class="cd-common">.</span><span class="cd-func">isdigit</span><span class="cd-brac-f">()</span><span class="cd-common">:</span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-2"></span><span class="cd-var">lst</span><span class="cd-common">.</span><span class="cd-func">append</span><span class="cd-brac-f">(<span class="cd-var">lst_ele</span>)</span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-1"></span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-1"></span><span class="cd-conditional">else</span><span class="cd-common">:</span></p></div>
+                            <div class="code-text"><p class="code-text-para"><span class="indent-2"></span><span class="cd-continue">continue</span></p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="code-bottom-part">
+                <div class="try-your-self">
+                    <p class="try-your-self-text"><a href="#" target="_blank" class="try-your-self-anchor">Try Yourself</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/code.js"></script>
+</body>
+</html>

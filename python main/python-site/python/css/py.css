@@ -1,0 +1,495 @@
+
+
+:root {
+    --font: 'Sushant', sans-serif;
+    --main-bac: rgb(251, 251, 253);
+    --pink-yellow:linear-gradient(90deg,#ed186a, #ff6700 100%, #ffca39 200%);
+    --pink-yellow-full:linear-gradient(90deg,#ed186a, #ff6700, #ffca39);
+    --bule-purple-orange:linear-gradient(90deg,#1e00ff, #702bfc 100%, #f23bff 200%, #ff7076 300%);
+    --bule-purple-orange-full:linear-gradient(90deg,#1e00ff, #702bfc , #f23bff , #ff7076 );
+    --blue-green-orage:linear-gradient(90deg,#0099c0, #00c070 100%, #69dcc3 200%, #f5db5d 300%, #ff8827 400%);
+    --blue-green-orage-full:linear-gradient(90deg,#0099c0, #00c070 , #69dcc3 , #f5db5d , #ff8827 );
+    --small-purple:linear-gradient(57deg,#5528c6, #5e08c2);
+    --small-dark-purple:linear-gradient(57deg,#3765c1, #4731cc);
+    --small-blue:linear-gradient(57deg,#1cafb3, #2390c5);
+    --small-light-blue:linear-gradient(57deg,#5ed1af, #19b3bd);
+    --link:#0066CC;
+    --white-bac: rgb(252, 252, 252);
+    --smoke-white-bac: rgb(249, 252, 255);
+}
+/* selection */
+::selection {background-color: rgba(135, 207, 235, 0.616);}
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+.py-main {
+    padding: 40px 20px 60px 20px;
+    background-color: rgb(251, 251, 253);
+    background-size: cover;
+}
+.py-main.dibya{margin-top: 48px;}
+@media only screen and (min-width:951px) {
+    .learn-py {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        grid-template-rows: 1fr;
+        padding: 30px 20px;
+        place-items: center;
+    }
+}
+.learn-py-text {width: fit-content;}
+/* text */
+.learn-py-main-heading .py-course-heading {
+    font-family:"Sushant", sans-serif;
+    /* font-family: 'Nexa'; */
+    font-weight: 600;
+    font-size: 3.5rem;
+    padding: 0px 20px 5px 30px;
+}
+.learn-py-main-heading .py-course-heading .py-course-python {
+    background-color: rgba(228, 0, 124, 1);
+    background-image: linear-gradient(117.8deg, rgba(240, 19, 77, 1) 22.2%, rgba(228, 0, 124, 1) 88.7%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.learn-py-main-heading .py-course-heading .py-course {color: rgb(49, 49, 49);}
+.learn-py-free p {
+    color: rgb(49, 49, 49);
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family:"Sushant", sans-serif;
+    padding: 10px 20px 20px 40px;
+}
+/* image */
+.learn-py-img {
+    width: fit-content;
+    height: fit-content;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.learn-py-img img {
+    width: 650px;
+    max-width: 100%;
+    margin: auto;
+}
+/* start learning */
+.start-learning {padding: 5px 35px;}
+.start-learning a {
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: rgb(12, 187, 50);
+    text-decoration: none;
+    font-family:"Sushant", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+}
+.start-learning .start-learning-span:hover {
+    text-decoration: underline;
+    transition: all 0.2s linear;
+}
+/* media query */
+@media only screen and (max-width:950px) {
+    /* text */
+    .learn-py-text {width: 100%;}
+    .learn-py-main-heading h1 {
+        padding: 30px 20px 10px 20px;
+        text-align: center;
+    }
+    .learn-py-free p {
+        padding: 10px 20px 20px 20px;
+        text-align: center;
+    }
+    /* images */
+    .learn-py-img {
+        max-width: 700px;
+        min-width: auto;
+        margin: 60px auto 20px auto;
+        text-align: center;
+    }
+    .learn-py-img img {
+        width: 650px;
+        max-width: 90%;
+    }
+    /* anchor */
+    .start-learning {text-align: center;}
+    .learn-py-main-heading .py-course-heading {
+        padding-top: 35px;
+        text-align: center
+    }
+    .py-main {
+        padding: 20px 20px 60px 20px;
+        background-color: rgb(251, 251, 253);
+        background-size: cover;
+    }    
+    .learn-py-main-heading .py-course-heading .py-course-python {text-align: center;}
+}
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+/* ========== why learn python ========== */
+.why-learn-container {
+    margin: 20px 0px 0px 0px;
+    padding: 40px 0px;
+    background-color: rgb(251, 251, 253);
+}
+.why-learn {padding: 40px 20px 40px 20px;}
+.why-ques {
+    padding: 20px;
+    text-align: end;
+}
+.why-ques .why-question-heading {
+    font-family:"Sushant", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding: 0px 20px 5px 20px;
+    color: rgb(49, 49, 49);
+}
+.why-ques .why-ques-python {
+    background-image: linear-gradient(90deg, #ED186A, #FF6700, #FFCB39);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.why-question-answer {
+    font-family:"Sushant", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: rgb(49, 49, 49);
+    padding: 10px;
+}
+.why-ques .start-para {padding: 10px 5px 30px 5px;}
+.why-question-ans .why-question-answer .why-question-answer-ans-python {
+    background-image: linear-gradient(90deg, #0099c0, #00c070 100%, #69dcc3 200%, #f5db5d 300%, #ff8827 400%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/**//* some reasons *//**/
+.some-reason-below {
+    font-family:"Sushant", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+.some-reason-below-desktop {padding: 5px 45px 5px 10px;}
+.some-reason-below-mobile {padding: 5px 10px;}
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+@media only screen and (min-width:951px) {
+    .why-learn {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        grid-template-rows: 1fr;
+        padding: 30px 20px 30px 40px;
+        margin-top: 20px;
+        place-items: center;
+    }
+    .why-ques.why-ques-for-desktop {display: block;}
+    .why-ques.why-ques-for-mobile {display: none;}
+    .why-learn-img {
+        width: 750px;
+        max-width: 100%;
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    .why-question-answer { padding: 10px 45px 10px 0px;}
+    .why-ques .why-question-heading {padding: 0px 30px 5px 20px;}
+}
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+@media only screen and (max-width:950px) {
+    .why-learn {display: block;}
+    .why-ques {
+        text-align: center;
+        width: 100%;
+    }
+    .why-ques.why-ques-for-mobile {display: block;}
+    .why-ques.why-ques-for-desktop {display: none;}
+    .why-img{text-align: center;}
+    .why-learn-img {
+        width: 750px;
+        max-width: 95%;
+        padding: 0px 25px;
+        margin: auto;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:650px) {.learn-py-main-heading .py-course-heading,.why-ques .why-question-heading,.here-why-heading h1 {font-size: 3rem;}.learn-py-free p,.why-question-answer {font-size: 1.3rem;}}@media only screen and (max-width:450px) {.learn-py-main-heading .py-course-heading,.why-ques .why-question-heading,.here-why-heading h1 {font-size: 2.5rem;}.learn-py-free p,.why-question-answer {font-size: 1.1rem;}}
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
+/* why reason */
+.reason-wrapper-right{
+    margin: 20px 0px;
+    background-color: rgb(250, 251, 253);
+}
+.reason-text-right{
+    padding: 15px 40px 7px 40px;
+    font-family: "graphik","sushant",sans-serif;
+    font-family: var(--font);
+    text-align: center;
+}
+.reason-heading-right{
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 10px 0px;
+    background-image: var(--small-purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.reason-text-wrapper-right{
+    font-weight: 400;
+    font-size: 17px;
+}
+.reason-text-1-wrapper-right .reason-text-1-right, .reason-text-2-wrapper-right .reason-text-2-right{
+    padding: 5px 4px;
+    color: rgb(27, 27, 27);
+}
+
+@media only screen and (min-width:951px) {
+    .reason-right{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+    .reason-text-right{
+        place-self: center;
+        text-align: start;
+    }
+}
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+.reason-wrapper-left{
+    margin: 20px 0px;
+    background-color: rgb(250, 251, 253);
+}
+.reason-text-left{
+    padding: 15px 40px 7px 40px;
+    font-family: "graphik","sushant",sans-serif;
+    font-family: var(--font);
+    text-align: center;
+}
+.reason-heading-left{
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 10px 0px;
+    background-image: var(--blue-green-orage);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.reason-text-wrapper-left{
+    font-weight: 400;
+    font-size: 17px;
+}
+.reason-text-1-wrapper-left .reason-text-1-left, .reason-text-2-wrapper-left .reason-text-2-left{
+    padding: 5px 4px;
+    color: rgb(27, 27, 27);
+}
+
+@media only screen and (min-width:951px) {
+    .reason-left{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+    .reason-text-left{
+        place-self: center;
+        text-align: start;
+    }
+}
+/* display none for desktop and mobile */
+@media only screen and (min-width:951px) {.reason-text-left-mobile{display: none;}.reason-text-left-desktop{display: block;}}
+@media only screen and (max-width:950px) {.reason-text-left-desktop{display: none;}.reason-text-left-mobile{display: block;}.reason-heading-left,.reason-heading-right{padding: 40px 0px 10px 0px;}}
+
+/* background images for reason */
+.reason-img-right,.reason-img-left{
+    height: 500px;
+    background-size: 450px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.reason-img-easy{background-image: url("../images/why/reason/easy.png");}
+.reason-img-web{background-image: url("../images/why/reason/web.png");}
+.reason-img-ai{background-image: url("../images/why/reason/ai.png");}
+.reason-img-data{background-image: url("../images/why/reason/data-extraction.png");}
+.reason-img-popular{background-image: url("../images/why/reason/popular.png");border-radius: 40px;}
+.reason-img-money{background-image: url("../images/why/reason/salary.png");border-radius: 40px;}
+@media only screen and (max-width:1020px) {.reason-img-right,.reason-img-left{height: 500px;background-size: 450px;}}
+@media only screen and (max-width:990px) {.reason-img-right,.reason-img-left{height: 450px;background-size: 400px;}}
+@media only screen and (max-width:450px) {.reason-img-right,.reason-img-left{height: 400px;background-size: 350px;}}
+@media only screen and (max-width:350px) {.reason-img-right,.reason-img-left{height: 350px;background-size: 300px;}} 
+
+/**//**//**//**//**//**//**//**//**//*                            *//**//**//**//**//**//**//**//**//**/
+/**//**//**//**//**//**//**//**//**//*     Why learn from here    *//**//**//**//**//**//**//**//**//**/
+/**//**//**//**//**//**//**//**//**//*                            *//**//**//**//**//**//**//**//**//**/
+.why-here{
+    background-color: #fff;
+    margin: 20px 0px 0px 0px;
+}
+.here-why-explanation{
+    font-family: "graphik","sushant",sans-serif;
+    font-family: var(--font);
+    padding: 20px 40px 20px 40px;
+}
+.here-why-heading h1{
+    color: rgb(49, 49, 49);
+    font-weight: 600;
+    font-size: 3.5rem;
+    padding: 5px 0px;
+}
+.here-why-heading-h1-python{
+    background-image: var(--pink-yellow-full);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.here-why-text p{
+    color: rgb(37, 37, 37);
+    font-weight: 400;
+    font-size: 17px;
+    padding: 5px 3px;
+}
+@media only screen and (min-width:951px) {
+    .here-why{
+        background-image: url("../images/why/here/why-here.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 600px;
+        min-height: 600px;
+        max-height: auto;
+        display: grid;
+        align-items: center;
+        padding: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .here-why-explanation-pic{display: none;}
+}
+@media only screen and (max-width:950px) {
+    .here-why{
+        text-align: center;
+        padding: 20px;
+    }
+    .here-why-explanation-pic{
+        display: block;
+        background-image: url("../images/why/here/why-here-small.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-attachment: scroll;
+        height: 450px;
+        min-height: auto;
+        max-height: auto;
+    }
+}
+
+@media only screen and (max-width:650px) {.here-why-heading h1 {font-size: 3rem;}}@media only screen and (max-width:450px) {.here-why-heading h1 {font-size: 2.5rem;}}
+/* Why learn from here reasons */
+.why-here-reason-wrapper.white-color-bac{background-color: var(--white-bac);}
+.why-here-reason-wrapper.smoke-color-bac {background-color: var(--smoke-white-bac);}
+.here-purple{color: #6056DF;}
+.here-red{color: #FF4B3B;}
+.here-yellow{color: #FF9400;}
+.here-green{color: #4BD964;}
+.try-your-self a{color: #1f9e36; text-decoration: none;}
+.why-here-reason-wrapper{
+    font-family: "graphik","sushant",sans-serif;
+    font-family: var(--font);
+    text-align: center;
+}
+.here-reason-heading h1{
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 30px 10px 10px 10px;
+}
+.here-reason-explanation p{
+    font-weight: 400;
+    font-size: 17px;
+    padding: 10px 10px 15px 10px;
+}
+.here-reason-img{
+    height: 500px;
+    background-size: 450px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.interactive-tutorial{background-image: url("../images/why/here/int.png");}
+.easy-explanation{background-image: url("../images/why/here/easy.png");}
+.full-support{background-image: url("../images/why/here/support.png");}
+.pro-lover{background-image: url("../images/why/here/lover.png");}
+@media only screen and (min-width: 871px) {
+    .why-here-reasons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 20px 15px 15px 15px;
+        grid-gap: 15px 15px;
+    }   
+    .why-here-reason-wrapper.smoke-color-bac-mob{background-color: var(--white-bac);}
+    .why-here-reason-wrapper.smoke-color-bac-desk{background-color: var(--smoke-white-bac);}
+}
+@media only screen and (max-width: 870px){
+    .why-here-reason-wrapper.smoke-color-bac-mob{background-color: var(--smoke-white-bac);}
+    .why-here-reason-wrapper.smoke-color-bac-desk{background-color: var(--white-bac);}
+    .why-here-reason-wrapper{margin: 10px;}
+}
+@media only screen and (max-width:500px) {.here-why-explanation-pic, .here-reason-img {background-size: 350px;height: 400px;min-height: auto;max-height: auto;}}@media only screen and (max-width:480px) {.here-why-explanation-pic, .here-reason-img {background-size: 310px;height: 360px;min-height: auto;max-height: auto;}}@media only screen and (max-width:450px) {.here-why-explanation-pic, .here-reason-img {background-size: 260px;height: 260px;min-height: auto;max-height: auto;}}@media only screen and (max-width:400px) {.here-why-explanation-pic, .here-reason-img {background-size: 210px;height: 210px;min-height: auto;max-height: auto;}}
+/* conclusion */
+.conclusion-wrapper{
+    /* margin: 20px 0px 0px 0px; */
+    background-image: url("../img/182.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 600px;
+    max-height: auto;
+    min-height: auto;
+    font-family:"Sushant", sans-serif;
+    font-family: var(--font);
+} 
+.conclusion-text-wrapper{
+    display: grid;
+    place-items: center;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+.conclusion-heading h1{
+    font-size: 3.9rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 15px 10px 15px;
+    background: #FF512F;
+    background: -webkit-linear-gradient(to right, #DD2476, #FF512F);
+    background: linear-gradient(to right, #DD2476, #FF512F);  
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.conclusion-explain{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(39, 39, 39);
+    padding: 20px 10px 10px 10px;
+}
+.conclusion-heading-anchor a, .conclusion-explain-anchor a{
+    display: block ;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--link);
+    padding: 10px;
+}
+.start-learning-span:hover{
+    text-decoration: underline;
+}
