@@ -1,24 +1,22 @@
 :root {
-    --nav-font-color: #1d1d1f;
-    --nav-font-color-little-light: #6e6e73;
-    --link-color: #0066cc;
-    --page-nav-filter: saturate(180%) blur(20px);
-    --page-nav-dark-color: rgba(29,29,31,0.72);
-    --page-nav-light-color: rgba(255,255,255,0.72);
-    
-    /* global_nav */
-    --global-nav-background: hsla(0, 0%, 96%, 1);
-    --global-nav-linear: linear-gradient(180deg, hsla(0, 0%, 94%, 1) 0%, hsla(0, 0%, 96%, 1) 50%, hsla(0, 0%, 94%, 1) 100%);
-    --global-nav-moz-linear: -moz-linear-gradient(180deg, hsla(0, 0%, 94%, 1) 0%, hsla(0, 0%, 96%, 1) 50%, hsla(0, 0%, 94%, 1) 100%);
-    --global-nav-webkit-linear: -webkit-linear-gradient(180deg, hsla(0, 0%, 94%, 1) 0%, hsla(0, 0%, 96%, 1) 50%, hsla(0, 0%, 94%, 1) 100%);
-    --global-nav-logo-shadow: 0px 2px 5px rgb(245, 245, 245);
-    --global-nav-list-border: 1px solid rgb(230, 230, 230);
-    --global-nav-list-border-ham-active: 1px solid rgb(171, 171, 171);
-    --global-nav-list-border-item: 1px solid rgb(232, 232, 232);
-    --global-nav-list-border-item-ham-active: 1px solid rgb(213, 213, 213);
-    --global-nav-link-color: #4b4b4b;
-    --global-nav-link-font-weight: 400;
+    --red: rgb(255, 59, 48);
+    --orange: rgb(255, 149, 0);
+    --yellow: rgb(255, 204, 0);
+    --green: rgb(52, 199, 89);
+    --mint: rgb(0, 199, 190);
+    --teal: rgb(48, 176, 199);
+    --cyan: rgb(50, 173, 230);
+    --blue: rgb(0, 122, 255);
+    --indigo: rgb(88, 86, 214);
+    --purple: rgb(175, 82, 222);
+    --pink: rgb(255, 45, 85);
+    --brown: rgb(162, 132, 94);
 
-    /* hamburger */
-    --ham-back-color: #000;
+    --gray: rgb(142, 142, 147);
+    --gray-2: rgb(174, 174, 178);
+    --gray-3: rgb(199, 199, 204);
+    --gray-4: rgb(209, 209, 214);
+    --gray-5: rgb(229, 229, 234);
+    --gray-6: rgb(242, 242, 247);
+
 }

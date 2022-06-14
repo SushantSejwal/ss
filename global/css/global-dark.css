@@ -1,26 +1,30 @@
 :root {
-    --nav-font-color: #f5f5f5;
-    --nav-font-color-little-light: #6e6e73;
-    --link-color: #0066cc;
-    --page-nav-filter: saturate(180%) blur(20px);
-    --page-nav-dark-color: rgba(29,29,31,0.72);
-    --page-nav-light-color: rgba(255,255,255,0.72);
-    
-    /* global_nav */
-    --global-nav-background: hsla(0, 0%, 16%, 1);
-    --global-nav-linear: linear-gradient(180deg, hsla(0, 0%, 16%, 1) 0%, hsla(0, 0%, 20%, 1) 25%, hsla(0, 0%, 20%, 1) 50%, hsla(0, 0%, 20%, 1) 75%, hsla(0, 0%, 16%, 1) 100%);
-    --global-nav-moz-linear: -moz-linear-gradient(180deg, hsla(0, 0%, 16%, 1) 0%, hsla(0, 0%, 20%, 1) 25%, hsla(0, 0%, 20%, 1) 50%, hsla(0, 0%, 20%, 1) 75%, hsla(0, 0%, 16%, 1) 100%);
-    --global-nav-webkit-linear: -webkit-linear-gradient(180deg, hsla(0, 0%, 16%, 1) 0%, hsla(0, 0%, 20%, 1) 25%, hsla(0, 0%, 20%, 1) 50%, hsla(0, 0%, 20%, 1) 75%, hsla(0, 0%, 16%, 1) 100%);
-    --global-nav-logo-shadow: 0px 1px 5px rgb(49, 49, 49);
-    --global-nav-list-border: 1px solid rgb(100, 100, 100);
-    --global-nav-list-border-ham-active: 1px solid rgb(143, 143, 143);
-    --global-nav-list-border-item: 1px solid rgb(50, 50, 50);
-    --global-nav-list-border-item-ham-active: 1px solid rgb(97, 97, 97);
-    --global-nav-link-color: #dadada;
-    --global-nav-link-font-weight: 300;
+    --red: rgb(255, 69, 58);
+    --orange: rgb(255, 159, 10);
+    --yellow: rgb(255, 214, 10);
+    --green: rgb(48, 209, 88);
+    --mint: rgb(102, 212, 207);
+    --teal: rgb(64, 200, 224);
+    --cyan: rgb(100, 210, 255);
+    --blue: rgb(10, 132, 255);
+    --indigo: rgb(94, 92, 230);
+    --purple: rgb(191, 90, 242);
+    --pink: rgb(255, 55, 95);
+    --brown: rgb(172, 142, 104);
 
-    /* hamburger */
-    --ham-back-color: #f5f5f5;
+    --gray: rgb(142, 142, 147);
+    --gray-2: rgb(142, 142, 147);
+    --gray-3: rgb(142, 142, 147);
+    --gray-4: rgb(142, 142, 147);
+    --gray-5: rgb(142, 142, 147);
+    --gray-6: rgb(142, 142, 147);
+    
+    --link-color: rgb(0, 102, 204);
+
+    --rose-to-purple-gradient: linear-gradient(110deg,#ff6673,#ff6673,#cc25e4,#7c00ff);
+    --blue-to-rose-gradient: linear-gradient(90deg,#702BFC,#F23BFF,#FF7076);
+    --pink-to-yellow-gradient: linear-gradient(90deg, rgb(237, 24, 106) 0%, rgb(255, 103, 0) 100%, rgb(255, 203, 57) 200%);
+    --dark-green-to-blue-gradient: linear-gradient(90deg, rgb(0, 158, 119) 0%, rgb(0, 153, 192) 100%, rgb(2, 127, 255) 200%, rgb(88, 86, 214) 300%);
 }
 
 .home-logo-svg path {

@@ -1,13 +1,6 @@
 let global_nav_logo_wrapper = document.querySelector('.global-nav-logo-wrapper');
 let global_hamburger = document.querySelector('.global-hamburger-wrapper');
 
-let global_nav_height = global_nav_logo_wrapper.offsetHeight;
-global_hamburger.style.height = `${global_nav_height}px`;
-
-window.addEventListener('resize', () => {
-    let global_nav_height = global_nav_logo_wrapper.offsetHeight;
-    global_hamburger.style.height = `${global_nav_height}px`;
-})
 
 
 // hamburger and nav links

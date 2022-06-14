@@ -14,6 +14,7 @@
     right: 0;
     left: 0;
     z-index: 999;
+    height: 56px
 }
 
 .global-nav-wrapper {
@@ -37,7 +38,7 @@
     font-family: 'Manrope', 'Sushant', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: var(--nav-font-color);
+    color: var(--white-2);
     text-decoration: none;
     z-index: 999;
     margin: 5px 15px;
@@ -69,14 +70,14 @@
     text-decoration: none;
     opacity: 0.8;
     font-family: 'Manrope', 'Sushant', sans-serif;
-    font-weight: var(--global-nav-link-font-weight);
+    font-weight: 300;
     font-size: 17px;
     transition: opacity 0.3s ease-in-out;
     -webkit-transition: opacity 0.3s ease-in-out;
     -moz-transition: opacity 0.3s ease-in-out;
     -ms-transition: opacity 0.3s ease-in-out;
     -o-transition: opacity 0.3s ease-in-out;
-    color: var(--nav-font-color);
+    color: var(--white-2);
 }
 
 .global-nav-links-list-item-anchors:hover {
@@ -110,7 +111,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: var(--nav-font-color);
+    color: var(--white-2);
 }
 
 .global-hamburger {
@@ -123,7 +124,7 @@
 
 .global-hamburger-bread {
     position: relative;
-    background-color: var(--ham-back-color);
+    background-color: var(--white-2);
     width: 100%;
     height: 1px;
     transition-property: transform, top;
@@ -142,8 +143,8 @@
 
 .global-hamburger-bread.ham-active {
     transition-property: top, transform;
-    transition-duration: 0.15s, 0.2s;
-    transition-delay: 0s, 0.14s;
+    transition-duration: 0.125s, 0.175s;
+    transition-delay: 0s, 0.1s;
     transition-timing-function: ease-in-out;
 }
 
@@ -183,11 +184,11 @@
     -ms-transform: translateY(50%);
     -o-transform: translateY(50%);
     opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    -webkit-transition: opacity 0.4s ease-in-out;
-    -moz-transition: opacity 0.4s ease-in-out;
-    -ms-transition: opacity 0.4s ease-in-out;
-    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
 }
 
 .global-hamburger-text-close {
@@ -197,11 +198,11 @@
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    -webkit-transition: opacity 0.4s ease-in-out;
-    -moz-transition: opacity 0.4s ease-in-out;
-    -ms-transition: opacity 0.4s ease-in-out;
-    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
 }
 
 .global-hamburger-text-menu.ham-active {
@@ -215,19 +216,20 @@
 @media screen and (min-width:769px) {
     .global-hamburger-wrapper {
         display: none;
+        height: 56px;
     }
 
     .global-nav {
-        background: var(--global-nav-background);
-        background: var(--global-nav-linear);
-        background: var(--global-nav-moz-linear);
-        background: var(--global-nav-webkit-linear);
+        background: rgb(13, 13, 13);
+        background: linear-gradient(90deg, rgb(13, 13, 13) 0%, rgb(23, 23, 23) 25%, rgb(26, 26, 26) 50%, rgb(23, 23, 23) 75%, rgb(13, 13, 13) 100%);
+        height: 56px;
     }
 }
 
 @media screen and (max-width:768px) {
     .global-hamburger-wrapper {
         display: block;
+        height: 56px;
     }
 
     .global-nav-logo-wrapper {
@@ -239,13 +241,11 @@
         justify-content: center;
         align-items: center;
         padding: 5px 15px;
-        background: var(--global-nav-background);
-        background: var(--global-nav-linear);
-        background: var(--global-nav-moz-linear);
-        background: var(--global-nav-webkit-linear);
+        background: rgb(13, 13, 13);
+        background: linear-gradient(90deg, rgb(13, 13, 13) 0%, rgb(23, 23, 23) 25%, rgb(26, 26, 26) 50%, rgb(23, 23, 23) 75%, rgb(13, 13, 13) 100%);
+        height: 56px;
         z-index: 999;
         min-width: 320px;
-        /* box-shadow: var(--global-nav-logo-shadow); */
         transition: all 0.2s ease-in-out 0.3s;
         -webkit-transition: all 0.2s ease-in-out 0.3s;
         -moz-transition: all 0.2s ease-in-out 0.3s;
@@ -284,34 +284,33 @@
         left: 0;
         height: 0px;
         overflow: hidden;
-        background: var(--global-nav-background);
-        background: var(--global-nav-linear);
-        background: var(--global-nav-moz-linear);
-        background: var(--global-nav-webkit-linear);
-        transition: all 0.55s cubic-bezier(.41, .78, .63, .96);
-        -webkit-transition: all 0.55s cubic-bezier(.41, .78, .63, .96);
-        -moz-transition: all 0.55s cubic-bezier(.41, .78, .63, .96);
-        -ms-transition: all 0.55s cubic-bezier(.41, .78, .63, .96);
-        -o-transition: all 0.55s cubic-bezier(.41, .78, .63, .96);
+        background: rgb(13, 13, 13);
+        background: linear-gradient(90deg, rgb(13, 13, 13) 0%, rgb(23, 23, 23) 25%, rgb(26, 26, 26) 50%, rgb(23, 23, 23) 75%, rgb(13, 13, 13) 100%);
+        transition: all 0.5s cubic-bezier(.4,.54,.69,.94);
+        -webkit-transition: all 0.5s cubic-bezier(.4,.54,.69,.94);
+        -moz-transition: all 0.5s cubic-bezier(.4,.54,.69,.94);
+        -ms-transition: all 0.5s cubic-bezier(.4,.54,.69,.94);
+        -o-transition: all 0.5s cubic-bezier(.4,.54,.69,.94);
         min-width: 320px;
-        /* border-bottom: 1px solid rgb(219, 219, 219); */
-    }
+}
 
     .global-nav-links-list-wrapper.ham-active {
         height: 100vh;
-        background: var(--global-nav-background);
-        background: var(--global-nav-linear);
-        background: var(--global-nav-moz-linear);
-        background: var(--global-nav-webkit-linear);
-
-    }
+        background: rgb(13, 13, 13);
+        background: linear-gradient(90deg, rgb(13, 13, 13) 0%, rgb(23, 23, 23) 25%, rgb(26, 26, 26) 50%, rgb(23, 23, 23) 75%, rgb(13, 13, 13) 100%);
+        transition: all 0.5s cubic-bezier(.41, .78, .63, .96);
+        -webkit-transition: all 0.5s cubic-bezier(.41, .78, .63, .96);
+        -moz-transition: all 0.5s cubic-bezier(.41, .78, .63, .96);
+        -ms-transition: all 0.5s cubic-bezier(.41, .78, .63, .96);
+        -o-transition: all 0.5s cubic-bezier(.41, .78, .63, .96);
+}
 
     .global-nav-links-list {
         margin: 100px 20px 50px 20px;
         padding: 20px 20px;
         flex-direction: column;
         justify-content: flex-start;
-        border-top: var(--global-nav-list-border);
+        border-top: 1px solid rgb(100, 100, 100);
         transform: translateY(-5px);
         -webkit-transform: translateY(-5px);
         -moz-transform: translateY(-5px);
@@ -328,7 +327,7 @@
     }
 
     .global-nav-links-list.ham-active {
-        border-top: var(--global-nav-list-border-ham-active);
+        border-top:  1px solid rgb(143, 143, 143);
         opacity: 1;
         transform: translateY(0px);
         -webkit-transform: translateY(10px);
@@ -339,7 +338,7 @@
 
     .global-nav-links-list-items {
         width: 100%;
-        border-bottom: var(--global-nav-list-border-item);
+        border-bottom: 1px solid rgb(50, 50, 50);
         padding: 3px 5px;
         transition: all 0.5s ease-in-out;
         -webkit-transition: all 0.5s ease-in-out;
@@ -350,7 +349,7 @@
 
     .global-nav-links-list-items.ham-active {
         padding: 5px;
-        border-bottom: var(--global-nav-list-border-item-ham-active);
+        border-bottom: 1px solid rgb(97, 97, 97);
     }
 
     .global-nav-links-list-items:last-of-type {
@@ -364,13 +363,13 @@
         transition-property: all;
         transition-duration: 0.2s;
         transition-timing-function: ease-in-out;
-        color: var(--global-nav-link-color);
+        color: rgb(218, 218, 218);
     }
 
     .global-nav-links-list-item-anchors.ham-active {
         opacity: 0.8;
         padding: 10px 10px;
-        color: var(--nav-font-color);
+        color: var(--white-2);
     }
 
     .global-nav-links-list-item-anchors.ham-active:hover {

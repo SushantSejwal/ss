@@ -1,32 +1,183 @@
-@import url('../../fonts/sans-serif/all/all.css');
+/* @import url('../../fonts/sans-serif/all/all.css'); */
 @import url('../../fonts/sans-serif/manrope/stylesheet.css');
 
 
 :root{
-    --white: #ffffff;
-    --white-08: #fbfbfd;
-    --white-06: #f5f5f7;
-    --black: #000000;
-    --black-08: #151516;
-    --black-06: #1d1d1f;
-    --ro-red: #f63e54;
-    --blue: #027fff;
-    --dark-teal: #049cb7;
-    --purple-like-light-blue: #8876fe;
-    --orange: #e66702;
-    --purple: #6529f8;
-    --indigo: #3d44c3;
-    --turquoise: #2294b1;
-    --dark-green: #0c9d46;
-    --purple-like-pink: #d71bce;
-    --font-color: #1d1d1f;
-    --pink: #ed186a;
-    --link-color: #0066cc;
+    --backdrop-filter: saturate(180%) blur(20px);
+    --page-nav-dark-color: rgba(29,29,31,0.72);
+    --page-nav-light-color: rgba(255,255,255,0.72);
 
-    --rose-to-purple-gradient: linear-gradient(110deg,#ff6673,#ff6673,#cc25e4,#7c00ff);
-    --blue-to-rose-gradient: linear-gradient(90deg,#702BFC,#F23BFF,#FF7076);
-    --pink-to-yellow-gradient: linear-gradient(90deg, rgb(237, 24, 106) 0%, rgb(255, 103, 0) 100%, rgb(255, 203, 57) 200%);
-    --dark-green-to-blue-gradient: linear-gradient(90deg, rgb(0, 158, 119) 0%, rgb(0, 153, 192) 100%, rgb(2, 127, 255) 200%, rgb(88, 86, 214) 300%);
+    /* ===_===_=== BLACK ===_===_=== */
+    --black: rgb(1, 1, 1);
+    --black-2: rgb(21, 21, 22);
+    --black-3: rgb(29, 29, 31);
+    --black-4: rgb(37, 37, 37);
+    --black-5: rgb(44, 43, 48);
+    --black-6: rgb(40, 40, 40);
+    --black-7: rgb(59, 58, 63);
+    --black-8: rgb(70, 70, 70);
+    --black-9: rgb(80, 80, 80);
+    --black-10: rgb(90, 90, 90);
+    --black-11: rgb(100, 100, 100);
+
+
+    --black-op: rgba(1, 1, 1, 0.9);
+    --black-2-op: rgba(21, 21, 22, 0.9);
+    --black-3-op: rgba(29, 29, 31, 0.9);
+    --black-4-op: rgba(37, 37, 37, 0.9);
+    --black-5-op: rgba(44, 43, 48, 0.9);
+    --black-6-op: rgba(40, 40, 40, 0.9);
+    --black-7-op: rgba(59, 58, 63, 0.9);
+    --black-8-op: rgba(70, 70, 70, 0.9);
+    --black-9-op: rgba(80, 80, 80, 0.9);
+    --black-10-op: rgba(90, 90, 90, 0.9);
+    --black-11-op: rgba(100, 100, 100, 0.9);
+
+    --black-op-2: rgba(1, 1, 1, 0.8);
+    --black-2-op-2: rgba(21, 21, 22, 0.8);
+    --black-3-op-2: rgba(29, 29, 31, 0.8);
+    --black-4-op-2: rgba(37, 37, 37, 0.8);
+    --black-5-op-2: rgba(44, 43, 48, 0.8);
+    --black-6-op-2: rgba(40, 40, 40, 0.8);
+    --black-7-op-2: rgba(59, 58, 63, 0.8);
+    --black-8-op-2: rgba(70, 70, 70, 0.8);
+    --black-9-op-2: rgba(80, 80, 80, 0.8);
+    --black-10-op-2: rgba(90, 90, 90, 0.8);
+    --black-11-op-2: rgba(100, 100, 100, 0.8);
+
+    --black-op-3: rgba(1, 1, 1, 0.7);
+    --black-2-op-3: rgba(21, 21, 22, 0.7);
+    --black-3-op-3: rgba(29, 29, 31, 0.7);
+    --black-4-op-3: rgba(37, 37, 37, 0.7);
+    --black-5-op-3: rgba(44, 43, 48, 0.7);
+    --black-6-op-3: rgba(40, 40, 40, 0.7);
+    --black-7-op-3: rgba(59, 58, 63, 0.7);
+    --black-8-op-3: rgba(70, 70, 70, 0.7);
+    --black-9-op-3: rgba(80, 80, 80, 0.7);
+    --black-10-op-3: rgba(90, 90, 90, 0.7);
+    --black-11-op-3: rgba(100, 100, 100, 0.7);
+
+    --black-op-4: rgba(1, 1, 1, 0.6);
+    --black-2-op-4: rgba(21, 21, 22, 0.6);
+    --black-3-op-4: rgba(29, 29, 31, 0.6);
+    --black-4-op-4: rgba(37, 37, 37, 0.6);
+    --black-5-op-4: rgba(44, 43, 48, 0.6);
+    --black-6-op-4: rgba(40, 40, 40, 0.6);
+    --black-7-op-4: rgba(59, 58, 63, 0.6);
+    --black-8-op-4: rgba(70, 70, 70, 0.6);
+    --black-9-op-4: rgba(80, 80, 80, 0.6);
+    --black-10-op-4: rgba(90, 90, 90, 0.6);
+    --black-11-op-4: rgba(100, 100, 100, 0.6);
+
+
+    /* ===_===_=== WHITE ===_===_=== */
+    --white: rgb(255, 255, 255);
+    --white-1: rgb(250, 250, 250);
+    --white-2: rgb(245, 245, 247);
+    --white-3: rgb(240, 240, 240);
+    --white-4: rgb(235, 235, 237);
+    --white-5: rgb(230, 230, 230);
+    --white-6: rgb(225, 225, 227);
+    --white-7: rgb(220, 220, 220);
+    --white-8: rgb(215, 215, 217);
+    --white-9: rgb(210, 210, 210);
+    --white-10: rgb(205, 205, 207);
+    --white-11: rgb(200, 200, 200);
+    --white-12: rgb(195, 195, 197);
+    --white-13: rgb(190, 190, 190);
+    --white-14: rgb(185, 185, 187);
+    --white-15: rgb(180, 180, 180);
+
+    --white-op: rgba(255, 255, 255, 0.9);
+    --white-1-op: rgba(250, 250, 250, 0.9);
+    --white-2-op: rgba(245, 245, 247, 0.9);
+    --white-3-op: rgba(240, 240, 240, 0.9);
+    --white-4-op: rgba(235, 235, 237, 0.9);
+    --white-5-op: rgba(230, 230, 230, 0.9);
+    --white-6-op: rgba(225, 225, 227, 0.9);
+    --white-7-op: rgba(220, 220, 220, 0.9);
+    --white-8-op: rgba(215, 215, 217, 0.9);
+    --white-9-op: rgba(210, 210, 210, 0.9);
+    --white-10-op: rgba(205, 205, 207, 0.9);
+    --white-11-op: rgba(200, 200, 200, 0.9);
+    --white-12-op: rgba(195, 195, 197, 0.9);
+    --white-13-op: rgba(190, 190, 190, 0.9);
+    --white-14-op: rgba(185, 185, 187, 0.9);
+    --white-15-op: rgba(180, 180, 180, 0.9);
+
+    --white-op-2: rgba(255, 255, 255, 0.8);
+    --white-1-op-2: rgba(250, 250, 250, 0.8);
+    --white-2-op-2: rgba(245, 245, 247, 0.8);
+    --white-3-op-2: rgba(240, 240, 240, 0.8);
+    --white-4-op-2: rgba(235, 235, 237, 0.8);
+    --white-5-op-2: rgba(230, 230, 230, 0.8);
+    --white-6-op-2: rgba(225, 225, 227, 0.8);
+    --white-7-op-2: rgba(220, 220, 220, 0.8);
+    --white-8-op-2: rgba(215, 215, 217, 0.8);
+    --white-9-op-2: rgba(210, 210, 210, 0.8);
+    --white-10-op-2: rgba(205, 205, 207, 0.8);
+    --white-11-op-2: rgba(200, 200, 200, 0.8);
+    --white-12-op-2: rgba(195, 195, 197, 0.8);
+    --white-13-op-2: rgba(190, 190, 190, 0.8);
+    --white-14-op-2: rgba(185, 185, 187, 0.8);
+    --white-15-op-2: rgba(180, 180, 180, 0.8);
+
+    --white-op-3: rgba(255, 255, 255, 0.7);
+    --white-1-op-3: rgba(250, 250, 250, 0.7);
+    --white-2-op-3: rgba(245, 245, 247, 0.7);
+    --white-3-op-3: rgba(240, 240, 240, 0.7);
+    --white-4-op-3: rgba(235, 235, 237, 0.7);
+    --white-5-op-3: rgba(230, 230, 230, 0.7);
+    --white-6-op-3: rgba(225, 225, 227, 0.7);
+    --white-7-op-3: rgba(220, 220, 220, 0.7);
+    --white-8-op-3: rgba(215, 215, 217, 0.7);
+    --white-9-op-3: rgba(210, 210, 210, 0.7);
+    --white-10-op-3: rgba(205, 205, 207, 0.7);
+    --white-11-op-3: rgba(200, 200, 200, 0.7);
+    --white-12-op-3: rgba(195, 195, 197, 0.7);
+    --white-13-op-3: rgba(190, 190, 190, 0.7);
+    --white-14-op-3: rgba(185, 185, 187, 0.7);
+    --white-15-op-3: rgba(180, 180, 180, 0.7);
+
+    --white-op-4: rgba(255, 255, 255, 0.6);
+    --white-1-op-4: rgba(250, 250, 250, 0.6);
+    --white-2-op-4: rgba(245, 245, 247, 0.6);
+    --white-3-op-4: rgba(240, 240, 240, 0.6);
+    --white-4-op-4: rgba(235, 235, 237, 0.6);
+    --white-5-op-4: rgba(230, 230, 230, 0.6);
+    --white-6-op-4: rgba(225, 225, 227, 0.6);
+    --white-7-op-4: rgba(220, 220, 220, 0.6);
+    --white-8-op-4: rgba(215, 215, 217, 0.6);
+    --white-9-op-4: rgba(210, 210, 210, 0.6);
+    --white-10-op-4: rgba(205, 205, 207, 0.6);
+    --white-11-op-4: rgba(200, 200, 200, 0.6);
+    --white-12-op-4: rgba(195, 195, 197, 0.6);
+    --white-13-op-4: rgba(190, 190, 190, 0.6);
+    --white-14-op-4: rgba(185, 185, 187, 0.6);
+    --white-15-op-4: rgba(180, 180, 180, 0.6);
+
+    /* ===_===_=== PURPLE ===_===_=== */
+    --dark-purple: rgb(28, 27, 32);
+    --dark-purple-op: rgba(28, 27, 32, 0.9);
+    --dark-purple-op-2: rgb(28, 27, 32, 0.8);
+    --dark-purple-op-3: rgb(28, 27, 32, 0.7);
+    --dark-purple-op-4: rgb(28, 27, 32, 0.6);
+
+    /* ===_===_=== APPLE ===_===_=== */
+    --apple-link: rgb(0, 102, 204);
+    --apple-red: rgb(246, 62, 84);
+    --apple-dark-blue: rgb(13, 19, 135);
+    --apple-blue: rgb(2, 127, 255);
+    --apple-light-blue: rgb(136, 118, 254);
+    --apple-dark-teal: rgb(4, 156, 183);
+    --apple-orange: rgb(230, 103, 2);
+    --apple-dark-purple: rgb(141, 18, 135);
+    --apple-purple: rgb(101, 41, 248);
+    --apple-purple-2: rgb(215, 27, 206);
+    --apple-turquoise: rgb(34, 148, 177);
+    --apple-dark-green: rgb(12, 157, 70);
+    --apple-indigo: rgb(61, 68, 195);
+
 }
 
 * {
@@ -43,8 +194,6 @@ body {
     overflow-y: scroll;
     overflow-X: auto;
     font-size: 18px;
-    /* background-color: #fff; */
-    /* min-height: 200vh; */
     color: var(--font-color);
     font-smooth: antialiased;
     -webkit-font-smoothing: antialiased;
