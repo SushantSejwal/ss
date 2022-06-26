@@ -1,3 +1,43 @@
+! function(){
+    let nav_list_item_container = document.getElementsByClassName('global-nav-links-list');
+    let nav_list_item_container_content = 
+    `<li class="global-nav-links-list-items global-nav-links-list-item-1">
+        <span class="global-nav-links-list-item-spans global-nav-links-list-items-span-1">
+            <a href="#" class="global-nav-links-list-item-anchors global-nav-links-list-item-anchor-1">Number System</a>
+        </span>
+    </li>
+    <li class="global-nav-links-list-items global-nav-links-list-item-2">
+        <span class="global-nav-links-list-item-spans global-nav-links-list-items-span-2">
+            <a href="#" class="global-nav-links-list-item-anchors global-nav-links-list-item-anchor-2">Boolean Logic</a>
+        </span>
+    </li>
+    <li class="global-nav-links-list-items global-nav-links-list-item-3">
+        <span class="global-nav-links-list-item-spans global-nav-links-list-items-span-3">
+            <a href="#" class="global-nav-links-list-item-anchors global-nav-links-list-item-anchor-3">Python</a>
+        </span>
+    </li>
+    <li class="global-nav-links-list-items global-nav-links-list-item-4">
+        <span class="global-nav-links-list-item-spans global-nav-links-list-items-span-4">
+            <a href="#" class="global-nav-links-list-item-anchors global-nav-links-list-item-anchor-4">MySql</a>
+        </span>
+    </li>
+    <li class="global-nav-links-list-items global-nav-links-list-item-5">
+        <span class="global-nav-links-list-item-spans global-nav-links-list-items-span-5">
+            <a href="#" class="global-nav-links-list-item-anchors global-nav-links-list-item-anchor-5">Steve Jobs</a>
+        </span>
+    </li>
+    <li class="global-nav-links-list-items global-nav-links-list-item-6">
+        <span class="global-nav-links-list-item-spans global-nav-links-list-items-span-6">
+            <a href="#" class="global-nav-links-list-item-anchors global-nav-links-list-item-anchor-6">About Me</a>
+        </span>
+    </li>`;
+
+    for (let i = 0; i < nav_list_item_container.length; i++){
+        nav_list_item_container[i].innerHTML = nav_list_item_container_content;
+    }
+}();
+
+
 let global_nav_logo_wrapper = document.querySelector('.global-nav-logo-wrapper');
 let global_hamburger = document.querySelector('.global-hamburger-wrapper');
 
@@ -61,3 +101,10 @@ global_nav_logo_anchor.addEventListener('click', () => {
 global_nav_link_link_anchors.forEach((anchor) => {
     anchor.addEventListener('click', () => { removing_classes() });
 });
+
+!function(){
+    let theme_icon = document.getElementsByClassName('local-nav-theme-logo');
+    for(let i = 0; i < theme_icon.length; i++){
+        theme_icon[i].style.display = 'none';
+    }
+}();
