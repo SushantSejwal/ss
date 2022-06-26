@@ -22,16 +22,23 @@
     let dark_theme_icon = document.getElementsByClassName('dark-theme-icon');
     let light_theme_icon = document.getElementsByClassName('light-theme-icon');
 
+    let code_wrapper_css = document.getElementById('code-wrapper-css');
+    let code_highlight_css = document.getElementById('code-highlight-css');
+
     for(let i = 0; i < theme_btn.length; i++){
         theme_btn[i].addEventListener('click', () => {
             for(let e = 0; e < dark_theme_icon.length; e++){
                 if (light_theme_icon[e].classList.contains('theme-active')){
                     dark_theme_icon[e].classList.add('theme-active');
                     light_theme_icon[e].classList.remove('theme-active');
+                    code_wrapper_css.href = "../rsrc/code/css/light/code.css";
+                    code_highlight_css.href = "../rsrc/code/css/light/code-highlight.css";
                 }
                 else{
                     dark_theme_icon[e].classList.remove('theme-active');
                     light_theme_icon[e].classList.add('theme-active');
+                    code_wrapper_css.href = "../rsrc/code/css/dark/code.css";
+                    code_highlight_css.href = "../rsrc/code/css/dark/code-highlight.css";
                 }
             }
         });
@@ -40,7 +47,7 @@
 
 ! function(){
     let copy_btn = document.getElementsByClassName('toolbar-copy-btn-wrapper');
-    let download_btn = document.getElementsByClassName('toolbar-download-btn');
+    // let download_btn = document.getElementsByClassName('toolbar-download-btn');
     let code_text = document.getElementsByClassName('pre-code');
     
     for(let i = 0; i < code_text.length; i++){
@@ -82,4 +89,3 @@
     }
 
 }();
-

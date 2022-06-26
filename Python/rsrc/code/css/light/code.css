@@ -11,6 +11,7 @@
     margin:auto;
 }
 .code{
+    background: rgb(235, 238, 245);
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -20,8 +21,7 @@
     margin: 10px;
     max-height: calc(100vh - 20px);
     min-height: 100px;
-    background: rgb(40, 44, 52);
-    background: rgb(23, 30, 43);
+    box-shadow: 2px 2px 15px rgb(196, 199, 205);
 }
 
 /* ======== title bar ======== */
@@ -32,13 +32,7 @@
     align-items: center;
     height: 45px;
     margin-bottom: 10px;
-    border-radius: 15px 15px 0px 0px;
-    -webkit-border-radius: 15px 15px 0px 0px;
-    -moz-border-radius: 15px 15px 0px 0px;
-    -ms-border-radius: 15px 15px 0px 0px;
-    -o-border-radius: 15px 15px 0px 0px;
-    /* background: rgb(40, 44, 52); */
-    border-bottom: 1px solid rgb(74, 80, 93);
+    border-bottom: 1px solid rgb(209, 213, 222);
 }
 
 /* file name */
@@ -55,7 +49,7 @@
 .code-file-name{
     font-size: 14px;
     font-family: 'Manrope', sans-serif;
-    color: rgb(162, 164, 165);
+    color: rgb(105, 105, 105);
     font-weight: 400;
     user-select: none;  
     -webkit-touch-callout: none;
@@ -102,7 +96,7 @@
 }
 .code-toolbar svg{
     width: 17px;
-    fill: rgb(131, 138, 153);
+    fill: rgb(110, 110, 110);
     transition: all 0.15s ease-in-out;
     -webkit-transition: all 0.15s ease-in-out;
     -moz-transition: all 0.15s ease-in-out;
@@ -111,7 +105,7 @@
     cursor: pointer;
 }
 .code-toolbar svg:hover{
-    fill: rgb(182, 196, 221);
+    fill: rgb(58, 58, 58);
 }
 /* theme */
 .toolbar-theme-btn{
@@ -122,7 +116,7 @@
     cursor: pointer;
 }
 .toolbar-theme-btn svg{
-    fill: rgb(131, 138, 153);
+    fill: rgb(110, 110, 110);
     transition: all 0.15s ease-in-out;
     -webkit-transition: all 0.15s ease-in-out;
     -moz-transition: all 0.15s ease-in-out;
@@ -131,7 +125,7 @@
     cursor: pointer;
 }
 .toolbar-theme-btn:hover svg{
-    fill: rgb(182, 196, 221);
+    fill: rgb(58, 58, 58);
 }
 
 .theme-icon{
@@ -172,11 +166,15 @@
     display: grid;
     width: 100%;
     grid-template-columns: 70px 1fr;
-    /* background: rgb(40, 44, 52); */
 }
 .code-text-wrapper{
     max-height: calc(100vh - 123.2px);
     overflow: scroll;
+    scroll-behavior: initial;
+}
+
+.code-text{
+    padding-right: 5px;
 }
 
 .code-text-wrapper::-webkit-scrollbar, 
@@ -204,7 +202,7 @@
 .code-text-wrapper::-webkit-scrollbar-thumb, 
 .code-output-body::-webkit-scrollbar-thumb, 
 .code-line-number-wrapper::-webkit-scrollbar-thumb {
-    background: #4d566694;
+    background: rgba(192, 195, 200, 0.58);
     border-radius: 2px;
     margin-left: 10px;
     margin-right: 10px;
@@ -219,7 +217,7 @@
 .code-text-wrapper::-webkit-scrollbar-thumb:hover, 
 .code-output-body::-webkit-scrollbar-thumb:hover, 
 .code-line-number-wrapper::-webkit-scrollbar-thumb:hover {
-    background: #4d5666;
+    background: rgba(151, 158, 170, 0.58);
 }
 .code-text-wrapper::-webkit-scrollbar-corner, 
 .code-output-body::-webkit-scrollbar-corner, 
@@ -235,6 +233,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    scroll-behavior: initial;
 }
 .code-line-number-wrapper::-webkit-scrollbar {
     width: 0px;
@@ -258,7 +257,7 @@
     -o-user-select: none;
     line-height: 1.65;
     font-size: 16px;
-    color: rgb(96, 99, 104);
+    color: rgb(179, 179, 180);
 }
 
 /* status bar */
@@ -267,21 +266,22 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    border-top: 1px solid rgb(74, 80, 93);
+    border-top: 1px solid rgb(209, 213, 222);
 }
 .code-status-bar a {
-    color: rgb(175, 175, 175);
+    color: rgb(165, 165, 165);
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     word-spacing: 2px;
     font-size: 14px;
+    /* letter-spacing: 1px; */
     text-decoration: none;
     display: block;
     margin: 5px 10px 5px 10px;
 }
 .try-yourself-anchor-span{
-    color: rgb(131, 138, 153);
-    border: 1px solid rgb(131, 138, 153);
+    color: rgb(103, 106, 112);
+    border: 1px solid rgb(103, 106, 112);
     padding: 7px 13px;
     display: block;
     border-radius: 10px;
@@ -296,8 +296,8 @@
     -o-transition: all 0.15s ease-in-out;
 }
 .try-yourself-anchor-span:hover{
-    color: rgb(182, 196, 221);
-    border: 1px solid rgb(182, 196, 221);
+    color: rgb(67, 122, 237);
+    border: 1px solid rgb(67, 122, 237);
 }
 /* download icon */
 .toolbar-download-btn-wrapper{
@@ -313,7 +313,7 @@
 } */
 .toolbar-download-btn svg{
     width: 17px;
-    fill: rgb(131, 138, 153);
+    fill: rgb(110, 110, 110);
     transition: all 0.15s ease-in-out;
     -webkit-transition: all 0.15s ease-in-out;
     -moz-transition: all 0.15s ease-in-out;
@@ -321,72 +321,5 @@
     -o-transition: all 0.15s ease-in-out;
 }
 .toolbar-download-btn svg:hover{
-    fill: rgb(182, 196, 221);
-}
-
-/* code output */
-.code-output{
-    margin: 10px;
-    background: rgb(40, 44, 52);
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    font-family: 'MonoLisa', monospace;
-    max-height: calc(100vh - 20px);
-    min-height: 100px;
-    width: calc(100% - 20px);
-}
-.code-output-header{
-    border-bottom: 1px solid rgb(74, 80, 93);
-    padding: 10px;
-    text-align: center;
-    border-radius: 15px 15px 0px 0px;
-    -webkit-border-radius: 15px 15px 0px 0px;
-    -moz-border-radius: 15px 15px 0px 0px;
-    -ms-border-radius: 15px 15px 0px 0px;
-    -o-border-radius: 15px 15px 0px 0px;
-}
-.code-output-header-text{
-    /* color: rgb(182, 196, 210); */
-    color: rgb(150, 164, 154);
-    font-family: 'Sushant', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    text-align: center; 
-    user-select: none;  
-    -webkit-touch-callout: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-}
-
-.code-output-body{
-    padding: 5px 20px;
-    overflow: auto;
-    width: 100%;
-    max-height: calc(100vh - 60px);
-    min-height: 100px;
-}
-
-.code-output-body-text{
-    font-size: 16px;
-    color: rgb(162, 169, 182);
-}
-
-.code-output-body::-webkit-scrollbar-thumb {
-    background: #4d566694;
-    border-radius: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    fill: rgb(58, 58, 58);
 }

@@ -11,6 +11,7 @@
     margin:auto;
 }
 .code{
+    background: rgb(25, 32, 46);
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -20,8 +21,6 @@
     margin: 10px;
     max-height: calc(100vh - 20px);
     min-height: 100px;
-    background: rgb(40, 44, 52);
-    background: rgb(23, 30, 43);
 }
 
 /* ======== title bar ======== */
@@ -32,12 +31,6 @@
     align-items: center;
     height: 45px;
     margin-bottom: 10px;
-    border-radius: 15px 15px 0px 0px;
-    -webkit-border-radius: 15px 15px 0px 0px;
-    -moz-border-radius: 15px 15px 0px 0px;
-    -ms-border-radius: 15px 15px 0px 0px;
-    -o-border-radius: 15px 15px 0px 0px;
-    /* background: rgb(40, 44, 52); */
     border-bottom: 1px solid rgb(74, 80, 93);
 }
 
@@ -172,11 +165,11 @@
     display: grid;
     width: 100%;
     grid-template-columns: 70px 1fr;
-    /* background: rgb(40, 44, 52); */
 }
 .code-text-wrapper{
     max-height: calc(100vh - 123.2px);
     overflow: scroll;
+    scroll-behavior: initial;
 }
 
 .code-text-wrapper::-webkit-scrollbar, 
@@ -235,6 +228,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    scroll-behavior: initial;
 }
 .code-line-number-wrapper::-webkit-scrollbar {
     width: 0px;
@@ -275,6 +269,7 @@
     font-weight: 400;
     word-spacing: 2px;
     font-size: 14px;
+    /* letter-spacing: 1px; */
     text-decoration: none;
     display: block;
     margin: 5px 10px 5px 10px;
@@ -327,7 +322,7 @@
 /* code output */
 .code-output{
     margin: 10px;
-    background: rgb(40, 44, 52);
+    background: rgb(25, 32, 46);
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;

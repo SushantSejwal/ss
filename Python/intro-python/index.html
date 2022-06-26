@@ -23,8 +23,8 @@
 
   <!-- code highlighter -->
   <link rel="stylesheet" href="../rsrc/code/mono/stylesheet.css">
-  <link id="code-wrapper-css" rel="stylesheet" href="../rsrc/code/css/light/code.css">
-  <link id="code-highlight-css" rel="stylesheet" href="../rsrc/code/css/light/code-highlight.css">
+  <link id="code-wrapper-css" rel="stylesheet" href="../rsrc/code/css/dark/code.css">
+  <link id="code-highlight-css" rel="stylesheet" href="../rsrc/code/css/dark/code-highlight.css">
 
 </head>
 
@@ -121,38 +121,32 @@
     <div class="all-content-wrapper">
       <div class="all-content">
         <div class="code-wrapper">
-          <pre data_try_src="awesome" data-file-src="ss.txt" class="pre-code code-container"><code class="lang-py match-braces">
-totContent = ""
-print(end="Enter the Name of File: ")
-fileName = str(input())
+          <pre data_try_src="awesome" data-file-src="ss.txt" class="pre-code code-container"><code class="lang-python match-braces">
+import abc
+import sys
+import stat as st
 
-try:
-    fileHandle = open(fileName, "r")
-    for content in fileHandle:
-        newContent = content.title()
-        totContent = totContent + newContent
-    fileHandle.close()
-    
+from _collections_abc import _check_methods
+
+GenericAlias = type(list[int])
+
+_names = sys.builtin_module_names
+
+# Note:  more names are added to __all__ later.
+__all__ = ["altsep", "curdir", "pardir", "sep", "pathsep", "linesep",
+           "defpath", "name", "path", "devnull", "SEEK_SET", "SEEK_CUR",
+           "SEEK_END", "fsencode", "fsdecode", "get_exec_path", "fdopen",
+           "extsep"]
+
+def _exists(name):
+    return name in globals()
+
+def _get_exports_list(module):
     try:
-        fileHandle = open(fileName, "w")
-        fileHandle.write(totContent)
-        print("\nAll Words in \"" + fileName + "\" Capitalized Successfully!")
-        print(end="\nWant to see the Content of File (y/n): ")
-        ch = input()
-        if ch=='y':
-            fileHandle = open(fileName, "r")
-            for content in fileHandle:
-                print(end=content)
-        else:
-            print("Exiting...")
-        fileHandle.close()
-        print()
-    except IOError:
-        print("Error Occurred!")
-        
-except IOError:
-    print("\nThe \"" + fileName + "\" is not Exist!")
-    print("Exiting...")
+        return list(module.__all__)
+    except AttributeError:
+        return [n for n in dir(module) if n[0] != '_']
+        print('Sushant is awesome')((()))[[[]]]{{{}}}
  </code></pre>
         </div>
 
@@ -187,7 +181,7 @@ except IOError:
   <script src="../rsrc/js/side-nav.js"></script>
   <script src="../rsrc/js/py-search.js"></script>
 
-  <!-- script -->
+  <!-- code script -->
   <script src="../rsrc/code/js/code-html.js"></script>
   <script src="../rsrc/code/js/code.js"></script>
   <script src="../rsrc/code/js/code-1.js"></script>
