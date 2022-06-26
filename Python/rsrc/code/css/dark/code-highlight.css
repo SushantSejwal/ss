@@ -1,32 +1,30 @@
-@import url('code-1.css');
 code[class*=language-],
 pre[class*=language-] {
-    color: #e06c75;
+    color: rgb(224, 108, 117);
     background: 0 0;
-    font-family: monospace;
-    font-size: 1em;
+    font-family: 'Monolisa', monospace;
+    font-size: 16px;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
     word-wrap: normal;
-    line-height: 1.5;
+    line-height: 1.65;
     -moz-tab-size: 4;
     -o-tab-size: 4;
     tab-size: 4;
     -webkit-hyphens: none;
     -moz-hyphens: none;
     -ms-hyphens: none;
-    font-size: 16px;
     hyphens: none;
-    max-height: calc(100vh - 50px);
+    font-variant-ligatures: none;
 }
 
 
 pre[class*=language-] {
-    padding: 2px 10px 0px 10px;
-    margin: .8em 0 0em 0;
-    overflow: auto
+    padding: 0px 25px 0px 5px;
+    width: 100%;
+    font-family: 'MonoLisa', monospace;
 }
 
 pre[class*=language-]::-webkit-scrollbar {
@@ -35,16 +33,17 @@ pre[class*=language-]::-webkit-scrollbar {
 }
 
 pre[class*=language-]::-webkit-scrollbar-track {
-    /* background-color: #80899b; */
-    border-radius: 5px 5px 4px 4px2px;
-    /*color: rgb(98, 99, 116);
-    */margin-right: 20px;
-    margin-left: 20px;
+    background: rgba(25, 32, 46, 0);
+    border-radius: 5px;
     padding: 10px;
-    -webkit-border-radius: 5px 5px 4px 4px2px;
-    -moz-border-radius: 5px 5px 4px 4px2px;
-    -ms-border-radius: 5px 5px 4px 4px2px;
-    -o-border-radius: 5px 5px 4px 4px2px;
+    -webkit-border-radius: 5px 5px 4px 4px 2px;
+    -moz-border-radius: 5px 5px 4px 4px 2px;
+    -ms-border-radius: 5px 5px 4px 4px 2px;
+    -o-border-radius: 5px 5px 4px 4px 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 pre[class*=language-]::-webkit-scrollbar-thumb {
@@ -60,10 +59,15 @@ pre[class*=language-]::-webkit-scrollbar-thumb {
 pre[class*=language-]::-webkit-scrollbar-thumb:hover {
     background: #4d5666;
 }
+pre[class*=language-]::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
+}
 
 :not(pre)>code[class*=language-],
 pre[class*=language-] {
     background: #19202e;
+    background: rgb(40, 44, 52);
+    background: rgb(23, 30, 43);
 }
 
 :not(pre)>code[class*=language-] {
@@ -223,123 +227,6 @@ pre[class*=language-] ::selection{
     color: green
 }
 
-pre[class*=language-].line-numbers {
-    position: relative;
-    padding-left: 3.8em;
-    counter-reset: linenumber
-}
-
-pre[class*=language-].line-numbers>code {
-    position: relative;
-    white-space: inherit
-}
-
-.line-numbers .line-numbers-rows {
-    position: absolute;
-    pointer-events: none;
-    top: 0;
-    font-size: 100%;
-    left: -60px;
-    width: 3em;
-    letter-spacing: -1px;
-    border-right: 1px solid rgba(49, 57, 72, 0.725);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none
-}
-
-.line-numbers-rows>span {
-    display: block;
-    counter-increment: linenumber
-}
-
-.line-numbers-rows>span:before {
-    content: counter(linenumber);
-    color: #3c4454;
-    display: block;
-    padding-right: .8em;
-    text-align: right
-}
-
-div.code-toolbar {
-    position: relative
-}
-
-div.code-toolbar>.toolbar {
-    position: absolute;
-    z-index: 10;
-    top: .3em;
-    right: .2em;
-    transition: opacity .3s ease-in-out;
-    opacity: 0
-}
-
-div.code-toolbar:hover>.toolbar {
-    opacity: 1
-}
-
-div.code-toolbar:focus-within>.toolbar {
-    opacity: 1
-}
-
-div.code-toolbar>.toolbar>.toolbar-item {
-    display: inline-block
-}
-
-div.code-toolbar>.toolbar>.toolbar-item>a {
-    cursor: pointer
-}
-
-div.code-toolbar>.toolbar>.toolbar-item>button {
-    background: 0 0;
-    border: 0;
-    color: inherit;
-    font: inherit;
-    line-height: normal;
-    overflow: visible;
-    padding: 0;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-div.code-toolbar>.toolbar>.toolbar-item>a,
-div.code-toolbar>.toolbar>.toolbar-item>button,
-div.code-toolbar>.toolbar>.toolbar-item>span {
-    color: rgb(239, 239, 239);
-    font-size: 15px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    background: #f5f2f0;
-    background: #384d74fc;
-    padding: 4px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    text-decoration: none;
-    font-family: 'Sushant', sans-serif;
-    margin: 4px;
-}
-
-div.code-toolbar>.toolbar>.toolbar-item>a:focus,
-div.code-toolbar>.toolbar>.toolbar-item>a:hover,
-div.code-toolbar>.toolbar>.toolbar-item>button:focus,
-div.code-toolbar>.toolbar>.toolbar-item>button:hover,
-div.code-toolbar>.toolbar>.toolbar-item>span:focus,
-div.code-toolbar>.toolbar>.toolbar-item>span:hover {
-    /* color: inherit; */
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-.copy-to-clipboard-button {
-    cursor: pointer;
-}
-
 .token.punctuation.brace-hover,
 .token.punctuation.brace-selected {
     outline: solid 1px
@@ -372,5 +259,9 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
 
 
 .keyword.keyword-print {
-    color: #61afef;
+    color: rgb(86, 182, 186);
+    /* font-weight: 500; */
+}
+.keyword.keyword-import {
+    color: rgb(198, 120, 190);
 }

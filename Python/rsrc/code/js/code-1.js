@@ -1,5 +1,5 @@
 ! function () { 
-    let code_container = document.getElementsByClassName('lang-python');
+    let code_container = document.getElementsByClassName('match-braces');
     let code_line_number = document.getElementsByClassName('code-line-number');
     for (let e = 0; e < code_container.length; e++){
         code_container_match = code_container[e].textContent.match(/\n/g) || '';

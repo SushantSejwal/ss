@@ -3,172 +3,194 @@
 
 <head>
 
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.7">
-	<meta name="description" content="This is a template made by Sushant Sejwal that he will use in his projects later">
-	<meta name="author" content="Sushant Sejwal">
-	<title>Introducing Python | Sushant</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.7">
+  <meta name="description" content="This is a template made by Sushant Sejwal that he will use in his projects later">
+  <meta name="author" content="Sushant Sejwal">
+  <title>Introducing Python | Sushant</title>
 
-	<!-- global -->
-	<link rel="stylesheet" href="../../global/css/global.css">
-	<link rel="stylesheet" href="../../global/css/global-nav.css">
-	<link rel="stylesheet" href="../../global/fonts/sans-serif/sushant/stylesheet.css">
+  <!-- global -->
+  <link rel="stylesheet" href="../../global/css/global.css">
+  <link rel="stylesheet" href="../../global/css/global-nav.css">
+  <link rel="stylesheet" href="../../global/fonts/sans-serif/sushant/stylesheet.css">
 
-	<!-- local -->
-	<link rel="stylesheet" href="../rsrc/css/var-light.css">
-	<link rel="stylesheet" href="../rsrc/css/local.css">
-	<link rel="stylesheet" href="../rsrc/css/nav.css">
-	<link rel="stylesheet" href="../rsrc/css/py-search.css">
+  <!-- local -->
+  <link rel="stylesheet" href="../rsrc/css/var-light.css">
+  <link rel="stylesheet" href="../rsrc/css/local.css">
+  <link rel="stylesheet" href="../rsrc/css/nav.css">
+  <link rel="stylesheet" href="../rsrc/css/py-search.css">
 
-	<!-- code highlighter -->
-	<link rel="stylesheet" href="../rsrc/code/css/code-1.css">
-	<link rel="stylesheet" href="../rsrc/code/mono/stylesheet.css">
-	<link rel="stylesheet" href="../rsrc/code/css/prism-dark.css">
+  <!-- code highlighter -->
+  <link rel="stylesheet" href="../rsrc/code/mono/stylesheet.css">
+  <link id="code-wrapper-css" rel="stylesheet" href="../rsrc/code/css/light/code.css">
+  <link id="code-highlight-css" rel="stylesheet" href="../rsrc/code/css/light/code-highlight.css">
 
 </head>
 
 <body class="BODY">
-	<!-- this will stay at top of the page. on clicking the hamburger menu user will get scroll to the top -->
-	<section id="top" class="awesome-sushant-is-hidden">Sushant is Awesome</section>
+  <!-- this will stay at top of the page. on clicking the hamburger menu user will get scroll to the top -->
+  <section id="top" class="awesome-sushant-is-hidden">Sushant is Awesome</section>
 
-	<!-- global nav -->
-	<nav class="global-nav">
-		<div class="global-hamburger-wrapper">
-			<a href="#top" class="hamburger-anchor">
-				<div class="global-hamburger">
-					<div class="global-hamburger-bread global-hamburger-bread-top"></div>
-					<div class="global-hamburger-bread global-hamburger-bread-bottom"></div>
-				</div>
-				<div class="global-hamburger-text">
-					<div class="global-hamburger-text-menu ham-active ham-active ham-active">Menu</div>
-					<div class="global-hamburger-text-close">Close</div>
-				</div>
-			</a>
-		</div>
-		<div class="global-nav-wrapper">
-			<div class="global-nav-logo-wrapper">
-				<a href="#" class="global-nav-logo-anchor" title="Home">
-					<div class="global-nav-logo"></div>
-				</a>
-			</div>
-			<script src="../../global/js/home-logo.js"></script>
-			<div class="global-nav-links-list-wrapper">
-				<ul class="global-nav-links-list">
+  <!-- global nav -->
+  <nav class="global-nav">
+    <div class="global-hamburger-wrapper">
+      <a href="#top" class="hamburger-anchor">
+        <div class="global-hamburger">
+          <div class="global-hamburger-bread global-hamburger-bread-top"></div>
+          <div class="global-hamburger-bread global-hamburger-bread-bottom"></div>
+        </div>
+        <div class="global-hamburger-text">
+          <div class="global-hamburger-text-menu ham-active ham-active ham-active">Menu</div>
+          <div class="global-hamburger-text-close">Close</div>
+        </div>
+      </a>
+    </div>
+    <div class="global-nav-wrapper">
+      <div class="global-nav-logo-wrapper">
+        <a href="#" class="global-nav-logo-anchor" title="Home">
+          <div class="global-nav-logo"></div>
+        </a>
+      </div>
+      <script src="../../global/js/home-logo.js"></script>
+      <div class="global-nav-links-list-wrapper">
+        <ul class="global-nav-links-list">
 
-				</ul>
-			</div>
-		</div>
-	</nav>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-	<!-- local nav -->
-	<nav class="local-nav">
-		<div class="local-nav-wrapper">
-			<div class="local-nav-hamburger-wrapper">
-				<div class="local-nav-hamburger">
-					<div class="local-nav-hamburger-bread-crust local-nav-hamburger-bread-crust-top"></div>
-					<div class="local-nav-hamburger-bread-crust local-nav-hamburger-bread-crust-middle"></div>
-					<div class="local-nav-hamburger-bread-crust local-nav-hamburger-bread-crust-bottom"></div>
-				</div>
-				<div class="local-nav-hamburger-text">
-					<span
-						class="local-nav-hamburger-text-span local-nav-hamburger-text-span-topic awesome-sushant">Topics</span>
-					<span class="local-nav-hamburger-text-span local-nav-hamburger-text-span-hide">Hide</span>
-				</div>
-			</div>
-			<div class="local-nav-topic" data-topic-name="">
-				<a href="" class="local-nav-topic-anchor">
-					<div class="local-nav-topic-text-wrapper">
-						<h3 class="local-nav-topic-text">Topic Name</h2>
-					</div>
-				</a>
-			</div>
-			<div class="local-nav-icons-wrapper">
-				<ul class="local-nav-icon-list">
-					<li class="local-nav-icon-wrapper">
-						<div title="Theme" class="local-nav-theme-logo icon icon-hover"></div>
-					</li>
-					<li class="local-nav-icon-wrapper local-nav-search-icon-wrapper">
-						<div title="Search" class="local-nav-search-logo icon icon-hover"></div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+  <!-- local nav -->
+  <nav class="local-nav">
+    <div class="local-nav-wrapper">
+      <div class="local-nav-hamburger-wrapper">
+        <div class="local-nav-hamburger">
+          <div class="local-nav-hamburger-bread-crust local-nav-hamburger-bread-crust-top"></div>
+          <div class="local-nav-hamburger-bread-crust local-nav-hamburger-bread-crust-middle"></div>
+          <div class="local-nav-hamburger-bread-crust local-nav-hamburger-bread-crust-bottom"></div>
+        </div>
+        <div class="local-nav-hamburger-text">
+          <span class="local-nav-hamburger-text-span local-nav-hamburger-text-span-topic awesome-sushant">Topics</span>
+          <span class="local-nav-hamburger-text-span local-nav-hamburger-text-span-hide">Hide</span>
+        </div>
+      </div>
+      <div class="local-nav-topic" data-topic-name="">
+        <a href="" class="local-nav-topic-anchor">
+          <div class="local-nav-topic-text-wrapper">
+            <h3 class="local-nav-topic-text">Topic Name</h2>
+          </div>
+        </a>
+      </div>
+      <div class="local-nav-icons-wrapper">
+        <ul class="local-nav-icon-list">
+          <li class="local-nav-icon-wrapper">
+            <div title="Theme" class="local-nav-theme-logo icon icon-hover"></div>
+          </li>
+          <li class="local-nav-icon-wrapper local-nav-search-icon-wrapper">
+            <div title="Search" class="local-nav-search-logo icon icon-hover"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-	<!-- all container including side nav -->
-	<div class="all-container">
-		<nav class="local-side-nav">
-			<div class="local-side-nav-wrapper">
-				<div class="local-side-nav-heading-wrapper">
-					<p class="local-side-nav-heading">Topics</p>
-					<div class="local-side-nav-icon-wrapper">
-						<div title="Search" class="local-nav-search-logo icon icon-hover"></div>
-					</div>
-				</div>
-				<script src="../rsrc/js/nav-icon.js"></script>
-				<div class="local-side-nav-links-wrapper">
-					<div class="local-side-nav-links">
-						<!-- links will be added by javascript here -->
-					</div>
-				</div>
-			</div>
-		</nav>
+  <!-- all container including side nav -->
+  <div class="all-container">
+    <nav class="local-side-nav">
+      <div class="local-side-nav-wrapper">
+        <div class="local-side-nav-heading-wrapper">
+          <p class="local-side-nav-heading">Topics</p>
+          <div class="local-side-nav-icon-wrapper">
+            <div title="Search" class="local-nav-search-logo icon icon-hover"></div>
+          </div>
+        </div>
+        <script src="../rsrc/js/nav-icon.js"></script>
+        <div class="local-side-nav-links-wrapper">
+          <div class="local-side-nav-links">
+            <!-- links will be added by javascript here -->
+          </div>
+        </div>
+      </div>
+    </nav>
 
-		<!-- Search -->
-		<div class="local-search">
+    <!-- Search -->
+    <div class="local-search"></div>
 
-		</div>
+    <!-- all content will go here -->
+    <div class="all-content-wrapper">
+      <div class="all-content">
+        <div class="code-wrapper">
+          <pre data_try_src="awesome" data-file-src="ss.txt" class="pre-code code-container"><code class="lang-py match-braces">
+totContent = ""
+print(end="Enter the Name of File: ")
+fileName = str(input())
 
-		<!-- all content will go here -->
-		<div class="all-content-wrapper">
-			<div class="all-content">
-				<div class="code-wrapper">
-					<pre data_try_src="awesome" data-file-src="ss.txt" class="pre-code code-container"><code class="lang-python match-braces">
-import math
-math.pow(12,434)
-name = 'Sushant'
-print(name)
-if name == 'Sushant':
-    print(f"{name} is great")
+try:
+    fileHandle = open(fileName, "r")
+    for content in fileHandle:
+        newContent = content.title()
+        totContent = totContent + newContent
+    fileHandle.close()
+    
+    try:
+        fileHandle = open(fileName, "w")
+        fileHandle.write(totContent)
+        print("\nAll Words in \"" + fileName + "\" Capitalized Successfully!")
+        print(end="\nWant to see the Content of File (y/n): ")
+        ch = input()
+        if ch=='y':
+            fileHandle = open(fileName, "r")
+            for content in fileHandle:
+                print(end=content)
+        else:
+            print("Exiting...")
+        fileHandle.close()
+        print()
+    except IOError:
+        print("Error Occurred!")
+        
+except IOError:
+    print("\nThe \"" + fileName + "\" is not Exist!")
+    print("Exiting...")
  </code></pre>
-				</div>
+        </div>
 
-			</div>
-		</div>
+      </div>
+    </div>
 
-		<!-- sublinks -->
-		<div class="topic-subtopic-link-wrapper">
-			<div class="topic-subtopic-link-text-wrapper">
-				<p class="topic-subtopic-link-text">Subtopic topic related to topic</p>
-			</div>
-			<div class="topic-subtopic-link">
-				<div class="topic-sublink">
-					<a href="#" class="topic-sublink-anchor">Sublink</a>
-				</div>
-				<div class="topic-sublink">
-					<a href="#" class="topic-sublink-anchor">Sublink</a>
-				</div>
-				<div class="topic-sublink">
-					<a href="#" class="topic-sublink-anchor">Sublink</a>
-				</div>
-				<div class="topic-sublink">
-					<a href="#" class="topic-sublink-anchor">Sublink</a>
-				</div>
-			</div>
-		</div>
-	</div>
+    <!-- sublinks -->
+    <div class="topic-subtopic-link-wrapper">
+      <div class="topic-subtopic-link-text-wrapper">
+        <p class="topic-subtopic-link-text">Subtopic topic related to topic</p>
+      </div>
+      <div class="topic-subtopic-link">
+        <div class="topic-sublink">
+          <a href="#" class="topic-sublink-anchor">Sublink</a>
+        </div>
+        <div class="topic-sublink">
+          <a href="#" class="topic-sublink-anchor">Sublink</a>
+        </div>
+        <div class="topic-sublink">
+          <a href="#" class="topic-sublink-anchor">Sublink</a>
+        </div>
+        <div class="topic-sublink">
+          <a href="#" class="topic-sublink-anchor">Sublink</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-	<script src="../../global/js/global-nav.js"></script>
-	<script src="../rsrc/js/nav.js"></script>
-	<script src="../rsrc/js/side-nav.js"></script>
-	<script src="../rsrc/js/py-search.js"></script>
+  <script src="../../global/js/global-nav.js"></script>
+  <script src="../rsrc/js/nav.js"></script>
+  <script src="../rsrc/js/side-nav.js"></script>
+  <script src="../rsrc/js/py-search.js"></script>
 
-	<!-- script -->
-	<script src="../rsrc/code/js/code-html.js"></script>
-	<script src="../rsrc/code/js/code.js"></script>
-	<script src="../rsrc/code/js/code-1.js"></script>
+  <!-- script -->
+  <script src="../rsrc/code/js/code-html.js"></script>
+  <script src="../rsrc/code/js/code.js"></script>
+  <script src="../rsrc/code/js/code-1.js"></script>
 
 
 </body>
