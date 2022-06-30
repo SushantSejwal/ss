@@ -1,6 +1,6 @@
 code[class*=language-],
 pre[class*=language-] {
-    color: #e06c75;
+    color: rgb(224, 108, 117);
     background: 0 0;
     font-family: 'Monolisa', monospace;
     font-size: 16px;
@@ -192,7 +192,8 @@ pre[class*=language-] ::selection{
 }
 
 .token.string {
-    color: #98c379
+    color: #98c379;
+    font-style: italic;
 }
 
 .token.variable {

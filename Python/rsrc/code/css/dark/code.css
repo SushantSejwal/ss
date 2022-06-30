@@ -18,7 +18,7 @@
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
     font-family: 'MonoLisa', monospace;
-    margin: 10px;
+    /* margin: 10px; */
     max-height: calc(100vh - 20px);
     min-height: 100px;
 }
@@ -224,7 +224,7 @@
 .code-line-number-wrapper{
     justify-self: center;
     max-height: calc(100vh - 123.2px);
-    overflow-y: scroll;
+    overflow-y: hidden;
     width: 100%;
     display: flex;
     justify-content: center;

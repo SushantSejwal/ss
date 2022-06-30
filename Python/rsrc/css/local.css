@@ -9,15 +9,35 @@ body{
     -moz-osx-font-smoothing: auto;
 }
 
+/* global nav */
+.global-nav.ham-active{
+    position: fixed;
+}
+
+@keyframes all_content_visible {
+    0%{display: block;}
+    100%{display: none;}
+}
 .all-container{
     max-width: 1900px;
     margin: auto;
+    animation: all_content_visible;
+    /* -webkit-animation: all_content_visible; */
+    animation-duration: 0s;
+    animation-timing-function: ease;
 }
 
-.all-content-wrapper,
+
+.all-content-wrapper{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 .topic-subtopic-link-wrapper{
-    margin: 10px 10px 10px 10px;
     background: var(--white-2);
+    margin: 10px 10px 10px 10px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -29,21 +49,30 @@ body{
     padding: 10px;
 }
 @media screen and (min-width: 1101px) {
-    .all-content-wrapper,
+    .all-content-wrapper{
+        margin: 0px 10px 0px 340px;
+    }
     .topic-subtopic-link-wrapper{
         margin: 10px 10px 10px 340px;
     }
 }
 @media screen and (max-width: 1100px) {
-    .all-content-wrapper,
-    .topic-subtopic-link-wrapper{
-        margin: 10px 0px 10px 0px;
+    .all-content-wrapper{
+        margin: 0px 0px 0px 0px;
         border-radius: 0px;
         -webkit-border-radius: 0px;
         -moz-border-radius: 0px;
         -ms-border-radius: 0px;
         -o-border-radius: 0px;
     }
+    .topic-subtopic-link-wrapper{
+        margin: 10px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
 }
 /* sublink */
 .topic-subtopic-link-wrapper{

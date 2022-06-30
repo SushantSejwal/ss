@@ -78,7 +78,10 @@ pre[class*=language-] ::selection{
     background-color: rgba(0, 101, 255, 0.247);
 }
 
-.token.comment,
+.token.comment{
+    color: rgb(169, 169, 170);
+    font-style: italic;
+}
 .token.prolog,
 .token.doctype,
 .token.cdata {
@@ -108,9 +111,11 @@ pre[class*=language-] ::selection{
 
 .token.selector,
 .token.attr-name,
-.token.string,
 .token.char,
 .token.inserted {
+    color: rgb(83, 160, 83);
+}
+.token.string{
     color: rgb(83, 160, 83);
     font-style: italic;
 }
@@ -132,13 +137,11 @@ pre[class*=language-] ::selection{
 .token.attr-value,
 .token.keyword {
 	color: rgb(200, 56, 198);
-    font-style: italic;
 }
 
 .token.function,
 .token.class-name {
 	color: rgb(124, 77, 255);
-    font-style: italic;
 }
 
 .token.regex,

@@ -60,32 +60,20 @@
 ! function(){
     let code = document.getElementsByClassName('code-text-wrapper');
     let num = document.getElementsByClassName('code-line-number-wrapper');
-    for (let i = 0; i < code.length; i++){
-        let is_mouse_inside_code = false
-        code[i].addEventListener('mouseover', () => { is_mouse_inside_code = true });
-        code[i].addEventListener('mouseout', () => { is_mouse_inside_code = false });
-        code[i].addEventListener('scroll', () => {
-            if (is_mouse_inside_code){
-                console.log('shinchan');
-                for (let i = 0; i < num.length; i++){
-                    num[i].scrollTo(0, code[i].scrollTop);
-                }
-            }
-        });
+
+    function code_scroll(mouseover, scroll){
+        for (let i = 0; i < scroll.length; i++){
+            scroll[i].scrollTo(0, mouseover[i].scrollTop);
+        }
     }
 
-    for (let i = 0; i < num.length; i++){
-        let is_mouse_inside_line_number = false
-        num[i].addEventListener('mouseover', () => { is_mouse_inside_line_number = true });
-        num[i].addEventListener('mouseout', () => { is_mouse_inside_line_number = false });
-        num[i].addEventListener('scroll', () => {
-            if (is_mouse_inside_line_number){
-                console.log('doremon');
-                for (let i = 0; i < code.length; i++){
-                    code[i].scrollTo(0, num[i].scrollTop);
-                }
-            }
+    for (let i = 0; i < code.length; i++){
+        code[i].addEventListener('scroll', (e) => {
+            code_scroll(code, num)
         });
+        // num[i].addEventListener('scroll', () => {
+        //     code_scroll(num, code)
+        // });
     }
 
 }();

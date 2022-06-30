@@ -40,6 +40,8 @@
 
 let global_nav_logo_wrapper = document.querySelector('.global-nav-logo-wrapper');
 let global_hamburger = document.querySelector('.global-hamburger-wrapper');
+let global_nav = document.querySelector('.global-nav');
+let all_container = document.querySelector('.all-container');
 
 
 
@@ -67,6 +69,11 @@ ham_btn.addEventListener('click', () => {
             ham_text_close.classList.remove('ham-active');
         }
     });
+
+    global_nav.classList.toggle('ham-active')
+    if(all_container){
+        all_container.classList.toggle('ham-active')
+    }
 
     global_nav_link_link_list_wrapper.classList.toggle('ham-active');
     global_nav_link_link_list.classList.toggle('ham-active');
